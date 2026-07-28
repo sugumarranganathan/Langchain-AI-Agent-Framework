@@ -1,0 +1,26 @@
+Built LangChain Myself
+-----------------------
+
+build these modules one by one:
+
+my_langchain/
+│
+├── llm.py            # Connect to Groq/OpenAI/Gemini
+├── prompts.py        # Prompt templates
+├── memory.py         # Conversation history
+├── chains.py         # Multi-step workflows
+├── agents.py         # Agent orchestration
+├── tools.py          # Weather, Search, Calculator
+├── loaders.py        # PDF/CSV loaders
+├── splitter.py       # Text chunking
+├── embeddings.py     # Create embeddings
+├── vectorstore.py    # FAISS/Chroma interface
+├── retriever.py      # Retrieve relevant chunks
+└── rag.py            # Combine retrieval + LLM
+
+This is conceptually how LangChain evolved: it started with a small abstraction over LLM calls, 
+then gradually added reusable components for common AI application tasks as developers encountered them.
+Rather than inventing all of these ideas, Harrison Chase packaged them into a consistent, modular framework that developers could reuse across projects
+
+========
+
