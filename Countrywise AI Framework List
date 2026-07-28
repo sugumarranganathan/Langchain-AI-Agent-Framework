@@ -1,0 +1,60 @@
+elow is a country-wise list of major AI, LLM, Agentic AI, Machine Learning, and Deep Learning frameworks. 
+It includes countries that have developed well-known frameworks used globally.
+
+| Country                      | Major AI Frameworks / Libraries / Platforms                                                                                                                 |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🇺🇸 **United States (USA)** | LangChain, LangGraph, AutoGen, LlamaIndex, Semantic Kernel, DSPy, OpenAI Agents SDK, Agno (Phidata), JAX, PyTorch, TensorFlow, MLX, Ray AI, Ludwig, Horovod |
+| 🇨🇳 **China**               | PaddlePaddle, MindSpore, MetaGPT, Camel AI, AgentScope, DB-GPT, ModelScope Agent, OneFlow, Colossal-AI, OpenManus, XinHaiLLM, FlagAI, FastGPT, Qwen-Agent   |
+| 🇯🇵 **Japan**               | Chainer, Neural Network Libraries (NNabla), OpenCALM, ELYZA Tasks Framework                                                                                 |
+| 🇩🇪 **Germany**             | Haystack, Auto-PyTorch, CausalNex (SAP contribution), PyKEEN                                                                                                |
+| 🇫🇷 **France**              | Keras, SmolAgents, PyTorch Tabular (community contributors), Flair NLP                                                                                      |
+| 🇬🇧 **United Kingdom (UK)** | PydanticAI, Spektral, GPflow                                                                                                                                |
+| 🇧🇷 **Brazil**              | CrewAI                                                                                                                                                      |
+| 🇨🇦 **Canada**              | TensorLayer, Ludwig AI (major contributors), MILA research tools                                                                                            |
+| 🇮🇳 **India**               | BharatGen, Sarvam AI SDK, Krutrim AI SDK, AI4Bharat Indic NLP Library                                                                                       |
+| 🇰🇷 **South Korea**         | HyperCLOVA SDK (NAVER), KoAlpaca, KULLM Framework                                                                                                           |
+| 🇮🇱 **Israel**              | DeepChecks, PySR                                                                                                                                            |
+| 🇳🇱 **Netherlands**         | OpenML, scikit-multiflow                                                                                                                                    |
+| 🇸🇪 **Sweden**              | spaCy (Explosion AI, founded in Berlin by founders from Europe with Swedish connections), Swedish NLP Toolkit                                               |
+| 🇨🇭 **Switzerland**         | FastAI Switzerland research tools, SwissArmyTransformer contributors                                                                                        |
+| 🇸🇬 **Singapore**           | Sea-Lion LLM Framework, MERaLiON AI Toolkit                                                                                                                 |
+| 🇦🇺 **Australia**           | Open Catalyst Project Framework, CSIRO AI Toolkit                                                                                                           |
+| 🇫🇮 **Finland**             | Turku NLP Toolkit, Voikko NLP                                                                                                                               |
+| 🇳🇴 **Norway**              | Norwegian Transformer Toolkit                                                                                                                               |
+| 🇩🇰 **Denmark**             | Alexandra AI Toolkit                                                                                                                                        |
+| 🇷🇺 **Russia**              | DeepPavlov                                                                                                                                                  |
+| 🇹🇼 **Taiwan**              | MediaTek NeuroPilot SDK, TAIDE Framework                                                                                                                    |
+| 🇪🇸 **Spain**               | MarIA NLP Toolkit                                                                                                                                           |
+| 🇮🇹 **Italy**               | ItaliaNLP Toolkit                                                                                                                                           |
+| 🇧🇪 **Belgium**             | TextGain NLP Framework                                                                                                                                      |
+| 🇦🇹 **Austria**             | ONNX Runtime contributors, Austrian NLP Toolkit                                                                                                             |
+
+=========
+
+Top Countries in AI Framework Development
+
+| Rank | Country             | Approx. Number of Major Frameworks |
+| ---- | ------------------- | ---------------------------------- |
+| 🥇 1 | 🇺🇸 USA            | 15+                                |
+| 🥈 2 | 🇨🇳 China          | 12+                                |
+| 🥉 3 | 🇯🇵 Japan          | 4+                                 |
+| 4    | 🇩🇪 Germany        | 4+                                 |
+| 5    | 🇫🇷 France         | 4+                                 |
+| 6    | 🇬🇧 United Kingdom | 3+                                 |
+| 7    | 🇮🇳 India          | 4+                                 |
+| 8    | 🇰🇷 South Korea    | 3+                                 |
+| 9    | 🇨🇦 Canada         | 3+                                 |
+| 10   | 🇷🇺 Russia         | 1+                                 |
+
+
+=========
+
+Observation
+🇺🇸 USA dominates the ecosystem with frameworks for LLMs, multi-agent systems, deep learning, and AI infrastructure.
+🇨🇳 China has rapidly expanded in LLM, Agentic AI, and distributed AI training frameworks.
+🇯🇵 Japan pioneered influential deep learning frameworks such as Chainer and NNabla and continues to contribute language-model tooling.
+🇮🇳 India is emerging with frameworks and SDKs focused on Indic languages and multilingual AI.
+Most globally adopted frameworks are open source, enabling developers worldwide to build AI applications without licensing costs.
+
+=========
+
