@@ -1,0 +1,24 @@
+Typical LangChain Workflow
+
+User
+   │
+   ▼
+LLM (Groq/Gemini/OpenAI)
+   │
+   ▼
+Agent
+   │
+   ├── Search Tool
+   ├── SQL Tool
+   ├── Retriever
+   ├── Calculator
+   ├── Python Tool
+   ├── Email Tool
+   ├── API Tool
+   └── Memory
+   │
+   ▼
+Final Response
+
+======
+
