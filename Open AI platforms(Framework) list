@@ -1,0 +1,38 @@
+| Framework / Platform                | Inventor / Founder                              | Year Introduced | Country      | Free / Open Source  | Paid Version / Company        | Primary Purpose                                      |
+| ----------------------------------- | ----------------------------------------------- | --------------- | ------------ | ------------------- | ----------------------------- | ---------------------------------------------------- |
+| **LangChain**                       | Harrison Chase                                  | 2022            | 🇺🇸 USA     | ✅ Yes (MIT License) | LangSmith, LangGraph Platform | Build LLM, RAG, and AI Agent applications            |
+| **LangGraph**                       | LangChain Inc. (led by Harrison Chase and team) | 2024            | 🇺🇸 USA     | ✅ Yes               | LangGraph Platform            | Stateful multi-agent workflows                       |
+| **AutoGen**                         | Microsoft Research                              | 2023            | 🇺🇸 USA     | ✅ Yes               | No official paid version      | Multi-agent conversations and automation             |
+| **CrewAI**                          | João Moura                                      | 2023            | 🇧🇷 Brazil  | ✅ Yes               | CrewAI Enterprise             | Role-based multi-agent AI systems                    |
+| **LlamaIndex** (formerly GPT Index) | Jerry Liu                                       | 2022            | 🇺🇸 USA     | ✅ Yes               | LlamaCloud                    | RAG, document indexing, knowledge retrieval          |
+| **Haystack**                        | deepset AI                                      | 2020            | 🇩🇪 Germany | ✅ Yes               | deepset AI Platform           | Search, NLP, and RAG pipelines                       |
+| **Semantic Kernel**                 | Microsoft                                       | 2023            | 🇺🇸 USA     | ✅ Yes               | No official paid version      | AI orchestration and enterprise AI integration       |
+| **DSPy**                            | Omar Khattab and the Stanford NLP Group         | 2023            | 🇺🇸 USA     | ✅ Yes               | No official paid version      | Programmatic prompt engineering and LLM optimisation |
+
+===========
+
+Timeline of Major AI Frameworks
+-------------------------------
+
+| Year     | Framework       | Inventor / Organisation           | Country      |
+| -------- | --------------- | --------------------------------- | ------------ |
+| **2020** | Haystack        | deepset AI                        | 🇩🇪 Germany |
+| **2022** | LangChain       | Harrison Chase                    | 🇺🇸 USA     |
+| **2022** | LlamaIndex      | Jerry Liu                         | 🇺🇸 USA     |
+| **2023** | AutoGen         | Microsoft Research                | 🇺🇸 USA     |
+| **2023** | CrewAI          | João Moura                        | 🇧🇷 Brazil  |
+| **2023** | Semantic Kernel | Microsoft                         | 🇺🇸 USA     |
+| **2023** | DSPy            | Omar Khattab & Stanford NLP Group | 🇺🇸 USA     |
+| **2024** | LangGraph       | LangChain Inc.                    | 🇺🇸 USA     |
+
+
+=========
+
+Observation
+USA has produced most of the widely adopted AI frameworks, largely because many leading AI companies and research institutions are based there.
+Germany contributed Haystack, a popular framework for search and RAG applications.
+Brazil contributed CrewAI, which became well known for role-based multi-agent systems.
+Nearly all of these frameworks are open source, while their creators generate revenue through enterprise platforms, cloud services, managed hosting, monitoring, or support.
+
+========
+
