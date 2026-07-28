@@ -1,0 +1,97 @@
+| Tool Category             | Purpose                                                           | Real-Time Example                               |
+| ------------------------- | ----------------------------------------------------------------- | ----------------------------------------------- |
+| **Search Tools**          | Search the web for live information                               | Google Search, Tavily Search, DuckDuckGo Search |
+| **Wikipedia Tool**        | Search Wikipedia articles                                         | "Who is Sundar Pichai?"                         |
+| **Python REPL Tool**      | Execute Python code                                               | Calculate statistics, generate charts           |
+| **SQL Database Tool**     | Query SQL databases                                               | Find customer orders from MySQL                 |
+| **CSV Tool**              | Read and analyse CSV files                                        | Analyse bus booking data                        |
+| **Pandas DataFrame Tool** | Perform data analysis                                             | Calculate monthly sales report                  |
+| **File System Tool**      | Read and write local files                                        | Read PDF reports, save logs                     |
+| **Document Loader Tool**  | Load PDFs, Word, CSV, HTML, Notion, Google Drive, Slack documents | Build a RAG chatbot from company documents      |
+| **Retriever Tool**        | Retrieve relevant documents from a knowledge base                 | Answer questions from a bus policy PDF          |
+| **Vector Store Tool**     | Store and search embeddings                                       | FAISS, ChromaDB, Pinecone, Weaviate             |
+| **API Tool**              | Call REST APIs                                                    | Flight search API, Weather API                  |
+| **Email Tool**            | Send emails                                                       | Send booking confirmation                       |
+| **Calculator Tool**       | Perform mathematical calculations                                 | Calculate ticket fare and GST                   |
+| **Shell Tool**            | Execute terminal commands                                         | Run Linux commands                              |
+| **Browser Tool**          | Browse web pages                                                  | Read travel website information                 |
+| **Memory Tool**           | Store conversation history                                        | Remember user's preferred seat                  |
+| **Human Tool**            | Ask a human when needed                                           | Confirm payment before booking                  |
+| **Custom Tool**           | User-defined functionality                                        | Check bus seat availability                     |
+
+
+=====
+
+Common LangChain Integrations
+
+| Integration   | Use                          |
+| ------------- | ---------------------------- |
+| OpenAI        | GPT models                   |
+| Groq          | Fast Llama models            |
+| Google Gemini | Gemini models                |
+| Anthropic     | Claude models                |
+| Ollama        | Local LLMs                   |
+| Hugging Face  | Open-source models           |
+| FAISS         | Local vector database        |
+| ChromaDB      | Vector storage               |
+| Pinecone      | Cloud vector database        |
+| Weaviate      | Enterprise vector database   |
+| PostgreSQL    | Database queries             |
+| MySQL         | Customer and booking records |
+| MongoDB       | NoSQL storage                |
+| Redis         | Cache and memory             |
+| Elasticsearch | Enterprise search            |
+
+
+=====
+
+Document Loaders (Very Useful for RAG)
+
+LangChain includes document loaders that can read many data sources into a standard document format.
+
+| Loader              | Reads                  |
+| ------------------- | ---------------------- |
+| PDF Loader          | PDF documents          |
+| CSV Loader          | CSV files              |
+| Text Loader         | TXT files              |
+| HTML Loader         | Web pages              |
+| Word Loader         | DOCX files             |
+| Excel Loader        | XLSX files             |
+| Notion Loader       | Notion workspace       |
+| Google Drive Loader | Google Drive documents |
+| Slack Loader        | Slack messages         |
+| GitHub Loader       | Repository files       |
+
+
+=======
+
+Retriever Tools
+
+Retrievers find the most relevant documents for a user's question, often as part of a RAG system.
+
+| Retriever               | Use                       |
+| ----------------------- | ------------------------- |
+| Vector Retriever        | Search embeddings         |
+| BM25 Retriever          | Keyword search            |
+| Wikipedia Retriever     | Search Wikipedia          |
+| Amazon Kendra Retriever | Enterprise search         |
+| Hybrid Retriever        | Keyword + semantic search |
+
+====
+
+Real-Time Example: AI Bus Ticket Booking Chatbot
+
+| Tool            | Purpose                                  |
+| --------------- | ---------------------------------------- |
+| Search Tool     | Find buses between Chennai and Madurai   |
+| Retriever       | Search bus policies from PDFs            |
+| SQL Tool        | Retrieve seat availability               |
+| Python Tool     | Calculate ticket fare                    |
+| Calculator Tool | Apply discounts and GST                  |
+| Email Tool      | Send ticket confirmation                 |
+| Memory Tool     | Remember passenger preferences           |
+| API Tool        | Process payments and fetch live bus data |
+
+
+===
+
