@@ -1,0 +1,181 @@
+ContextualCompressionRetriever
+Definition
+
+ContextualCompressionRetriever retrieves relevant documents and then compresses them by removing unnecessary text, returning only the most useful information to the LLM.
+
+Workflow
+User Question
+      │
+      ▼
+Retriever
+(Vector Store / FAISS / Chroma)
+      │
+      ▼
+Relevant Documents
+      │
+      ▼
+Compression
+(Removes unnecessary content)
+      │
+      ▼
+Important Paragraphs
+      │
+      ▼
+LLM
+      │
+      ▼
+Final Answer
+Why do we need it?
+
+Suppose you have a 500-page PDF.
+
+User asks:
+
+"What is the refund policy?"
+
+A normal retriever may return:
+
+Page 150
+Page 151
+Page 152
+Page 153
+
+containing lots of unrelated information.
+
+A ContextualCompressionRetriever filters those pages and returns only the paragraph discussing the refund policy.
+
+Real-Time Example
+Hospital Chatbot
+
+Hospital policy document:
+
+Visiting Hours
+Doctors List
+Parking Rules
+Pharmacy
+Emergency
+Insurance
+Refund Policy
+
+User:
+
+"What is the insurance policy?"
+
+Normal Retriever
+
+Returns:
+
+8 pages
+ContextualCompressionRetriever
+
+Returns:
+
+Insurance claims are accepted within 30 days.
+Required documents:
+• Medical Bill
+• Doctor Prescription
+• Patient ID
+
+Only the relevant information is passed to the LLM.
+
+Another Example
+Travel Chatbot
+
+Travel guide PDF (300 pages)
+
+User asks:
+
+"Tell me about Ooty."
+
+Without compression:
+
+300 pages
+
+With ContextualCompressionRetriever:
+
+Ooty is located in the Nilgiris district.
+Famous attractions:
+• Botanical Garden
+• Ooty Lake
+• Doddabetta Peak
+Advantages
+Reduces unnecessary text.
+Saves tokens.
+Faster responses.
+Improves answer quality.
+Works well with large PDFs.
+Disadvantages
+Slightly slower retrieval because of the compression step.
+May omit useful context if the compression is too aggressive.
+Components
+User Question
+        │
+        ▼
+Vector Store
+        │
+        ▼
+Retriever
+        │
+        ▼
+ContextualCompressionRetriever
+        │
+        ▼
+Compressor (LLM or Embeddings)
+        │
+        ▼
+Compressed Documents
+        │
+        ▼
+LLM
+
+  =========
+
+  Common Compressors
+
+| Compressor            | Purpose                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| **LLMChainExtractor** | Extracts only the relevant sentences from documents using an LLM. |
+| **LLMChainFilter**    | Filters out irrelevant documents before they reach the LLM.       |
+| **EmbeddingsFilter**  | Removes documents with low semantic similarity using embeddings.  |
+
+=======
+
+  Use Cases
+
+  | Application        | Why Use It                                |
+| ------------------ | ----------------------------------------- |
+| PDF Chatbot        | Extract only relevant paragraphs          |
+| Medical Assistant  | Retrieve only disease-related information |
+| Legal AI           | Return only relevant clauses              |
+| Research Assistant | Summarize long papers                     |
+| Travel Chatbot     | Return only destination details           |
+| Company Policy Bot | Show only the requested policy section    |
+
+=========
+
+Learning Order in RAG
+1. Document Loader
+        ↓
+2. Text Splitter
+        ↓
+3. Embeddings
+        ↓
+4. Vector Store (FAISS / Chroma)
+        ↓
+5. Retriever
+        ↓
+6. ContextualCompressionRetriever ⭐
+        ↓
+7. RetrievalQA
+        ↓
+8. Conversational RAG
+
+In short: ContextualCompressionRetriever is an advanced retriever that sits on top of another retriever
+  (such as a FAISS retriever). It first retrieves relevant documents, then compresses them so the LLM receives only 
+  the most relevant content, improving both efficiency and answer quality.
+
+  ========
+  
+  
+
+  
