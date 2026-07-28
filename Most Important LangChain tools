@@ -1,0 +1,12 @@
+LLM Integration – Connect to models like Groq, Gemini, or OpenAI.
+----------------------------------------------------------------
+
+Prompt Templates – Create reusable prompts.
+Output Parsers – Structure model responses.
+Tools – Extend the agent with capabilities.
+Agents – Decide which tool to use automatically.
+Memory – Maintain conversation context.
+Document Loaders – Import PDFs, CSVs, and other documents.
+Embeddings – Convert text into vectors.
+Vector Stores (FAISS/ChromaDB/Pinecone) – Store and search embeddings.
+Retrievers (RAG) – Fetch relevant information from your knowledge base.
