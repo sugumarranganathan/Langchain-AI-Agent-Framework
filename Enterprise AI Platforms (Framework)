@@ -1,0 +1,12 @@
+| Platform                                        | Company / Founder         | Year Introduced | Country  | Free               | Paid            | Purpose                                      |
+| ----------------------------------------------- | ------------------------- | --------------- | -------- | ------------------ | --------------- | -------------------------------------------- |
+| **LangSmith**                                   | LangChain Inc.            | 2023            | 🇺🇸 USA | Limited Free Tier  | ✅ Yes           | Debugging, testing, evaluation, monitoring   |
+| **LangGraph Platform**                          | LangChain Inc.            | 2024            | 🇺🇸 USA | Limited Free Tier  | ✅ Yes           | Deploy and manage AI agent applications      |
+| **LlamaCloud**                                  | LlamaIndex Inc.           | 2023            | 🇺🇸 USA | Limited Free Tier  | ✅ Yes           | Managed document parsing and RAG services    |
+| **Vertex AI**                                   | Google Cloud              | 2021            | 🇺🇸 USA | Limited Free Tier  | ✅ Yes           | End-to-end AI/ML platform                    |
+| **Azure AI Foundry** (formerly Azure AI Studio) | Microsoft                 | 2023            | 🇺🇸 USA | Limited Free Tier  | ✅ Yes           | Enterprise AI development and deployment     |
+| **Amazon Bedrock**                              | Amazon Web Services (AWS) | 2023            | 🇺🇸 USA | ❌ No               | ✅ Pay-as-you-go | Access and build with foundation models      |
+| **IBM watsonx**                                 | IBM                       | 2023            | 🇺🇸 USA | Limited Free Trial | ✅ Yes           | Enterprise AI, governance, and data platform |
+| **DataRobot AI Platform**                       | DataRobot                 | 2012            | 🇺🇸 USA | Trial Available    | ✅ Yes           | Automated machine learning and enterprise AI |
+
+==========
