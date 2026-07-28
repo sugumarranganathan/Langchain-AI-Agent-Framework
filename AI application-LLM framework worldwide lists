@@ -1,0 +1,36 @@
+| Rank | Framework                         | Inventor / Organization    | Year | Country      | Open Source | Best For                              |
+| ---- | --------------------------------- | -------------------------- | ---- | ------------ | ----------- | ------------------------------------- |
+| 1    | LangChain                         | Harrison Chase             | 2022 | 🇺🇸 USA     | ✅ Yes       | LLM Apps, RAG, AI Agents              |
+| 2    | LangGraph                         | LangChain Inc.             | 2024 | 🇺🇸 USA     | ✅ Yes       | Stateful Multi-Agent Systems          |
+| 3    | AutoGen                           | Microsoft Research         | 2023 | 🇺🇸 USA     | ✅ Yes       | Multi-Agent Conversations             |
+| 4    | CrewAI                            | João Moura                 | 2023 | 🇧🇷 Brazil  | ✅ Yes       | Role-Based AI Agents                  |
+| 5    | LlamaIndex                        | Jerry Liu                  | 2022 | 🇺🇸 USA     | ✅ Yes       | RAG & Document Retrieval              |
+| 6    | Haystack                          | deepset AI                 | 2020 | 🇩🇪 Germany | ✅ Yes       | Enterprise Search & RAG               |
+| 7    | Semantic Kernel                   | Microsoft                  | 2023 | 🇺🇸 USA     | ✅ Yes       | Enterprise AI Integration             |
+| 8    | DSPy                              | Omar Khattab & Stanford    | 2023 | 🇺🇸 USA     | ✅ Yes       | Prompt Programming                    |
+| 9    | PydanticAI                        | Pydantic Team              | 2024 | 🇬🇧 UK      | ✅ Yes       | Type-Safe AI Agents                   |
+| 10   | OpenAI Agents SDK                 | OpenAI                     | 2025 | 🇺🇸 USA     | ✅ Yes       | AI Agent Development                  |
+| 11   | Agno (formerly Phidata)           | Agno Team                  | 2024 | 🇺🇸 USA     | ✅ Yes       | Multi-Agent Applications              |
+| 12   | SmolAgents                        | Hugging Face               | 2024 | 🇫🇷 France  | ✅ Yes       | Lightweight AI Agents                 |
+| 13   | OpenManus                         | OpenManus Community        | 2025 | 🇨🇳 China   | ✅ Yes       | Autonomous AI Agents                  |
+| 14   | Camel AI                          | CAMEL-AI Organization      | 2023 | 🇨🇳 China   | ✅ Yes       | Multi-Agent Collaboration             |
+| 15   | MetaGPT                           | DeepWisdom                 | 2023 | 🇨🇳 China   | ✅ Yes       | AI Software Development Teams         |
+| 16   | AgentScope                        | Alibaba Group              | 2024 | 🇨🇳 China   | ✅ Yes       | Enterprise Multi-Agent Systems        |
+| 17   | DB-GPT                            | eosphoros-ai               | 2023 | 🇨🇳 China   | ✅ Yes       | AI + SQL + Databases                  |
+| 18   | XinHaiLLM                         | Chinese Research Community | 2024 | 🇨🇳 China   | ✅ Yes       | Multi-Agent Research                  |
+| 19   | ModelScope Agent                  | Alibaba DAMO Academy       | 2024 | 🇨🇳 China   | ✅ Yes       | AI Agent Framework                    |
+| 20   | JAX                               | Google                     | 2018 | 🇺🇸 USA     | ✅ Yes       | AI & Deep Learning Research           |
+| 21   | PyTorch                           | Meta AI                    | 2016 | 🇺🇸 USA     | ✅ Yes       | Deep Learning                         |
+| 22   | TensorFlow                        | Google Brain               | 2015 | 🇺🇸 USA     | ✅ Yes       | Machine Learning                      |
+| 23   | Keras                             | François Chollet           | 2015 | 🇫🇷 France  | ✅ Yes       | Neural Networks                       |
+| 24   | MLX                               | Apple                      | 2023 | 🇺🇸 USA     | ✅ Yes       | Apple Silicon AI Development          |
+| 25   | Chainer                           | Preferred Networks         | 2015 | 🇯🇵 Japan   | ✅ Yes       | Deep Learning (Historic)              |
+| 26   | Neural Network Libraries (NNabla) | Sony                       | 2017 | 🇯🇵 Japan   | ✅ Yes       | Deep Learning Research                |
+| 27   | MindSpore                         | Huawei                     | 2020 | 🇨🇳 China   | ✅ Yes       | AI & Deep Learning                    |
+| 28   | PaddlePaddle                      | Baidu                      | 2016 | 🇨🇳 China   | ✅ Yes       | Industrial AI & Deep Learning         |
+| 29   | OneFlow                           | OneFlow Inc.               | 2020 | 🇨🇳 China   | ✅ Yes       | Distributed Deep Learning             |
+| 30   | Colossal-AI                       | HPC-AI Tech                | 2022 | 🇨🇳 China   | ✅ Yes       | Large Model Training & Distributed AI |
+
+
+=========
+
