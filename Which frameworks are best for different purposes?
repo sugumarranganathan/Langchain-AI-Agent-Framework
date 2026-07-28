@@ -1,0 +1,30 @@
+Which frameworks are best for different purposes?
+
+| Purpose                     | Best Framework                  |
+| --------------------------- | ------------------------------- |
+| AI Chatbots                 | LangChain                       |
+| Multi-Agent Systems         | LangGraph, AutoGen, CrewAI      |
+| RAG Applications            | LangChain, LlamaIndex, Haystack |
+| Enterprise AI               | Semantic Kernel                 |
+| Prompt Engineering          | DSPy                            |
+| Type-safe AI Development    | PydanticAI                      |
+| AI Agents with Tool Calling | OpenAI Agents SDK               |
+
+
+Most Popular Today (Industry Ranking)
+🥇 LangChain
+🥈 LangGraph
+🥉 AutoGen
+CrewAI
+LlamaIndex
+Haystack
+Semantic Kernel
+DSPy
+PydanticAI
+OpenAI Agents SDK
+
+These are among the most widely recognised and actively used AI application frameworks today for building chatbots, 
+RAG systems, and AI agents. They represent the current mainstream ecosystem rather than the only frameworks that exist.
+
+======
+
