@@ -1,0 +1,21 @@
+most common legacy LangChain memory types
+
+| Memory Type                                   | Purpose                                               | Retains                    | Best For                     | Real-Time Example                               |
+| --------------------------------------------- | ----------------------------------------------------- | -------------------------- | ---------------------------- | ----------------------------------------------- |
+| **ConversationBufferMemory**                  | Stores the complete conversation                      | All messages               | Short conversations          | Customer support chatbot remembers everything   |
+| **ConversationBufferWindowMemory**            | Stores only the last *N* messages                     | Recent messages            | Memory-limited chatbots      | Keep only the last 5 user messages              |
+| **ConversationSummaryMemory**                 | Summarizes older messages with an LLM                 | Summary + recent chat      | Long conversations           | AI assistant summarizes earlier discussion      |
+| **ConversationSummaryBufferMemory**           | Combines summary with recent messages                 | Summary + recent messages  | Long chats with token limits | Personal AI assistant                           |
+| **ConversationTokenBufferMemory**             | Keeps messages until a token limit is reached         | Token-limited history      | Token optimization           | GPT applications with context limits            |
+| **CombinedMemory**                            | Combines multiple memory types                        | Depends on configuration   | Hybrid memory                | Buffer + Summary together                       |
+| **SimpleMemory**                              | Stores fixed key-value information                    | Static values              | Configuration                | Company name, application settings              |
+| **ReadOnlySharedMemory**                      | Shares memory between chains without allowing changes | Shared read-only data      | Multi-chain applications     | Multiple agents read the same knowledge         |
+| **ConversationEntityMemory**                  | Tracks entities (people, places, products)            | Entity information         | Personal assistants          | Remembers names like "Sugumar", "Chennai"       |
+| **EntityMemory**                              | Stores structured information about entities          | Entity attributes          | Knowledge tracking           | Remembers a customer's favourite products       |
+| **VectorStoreRetrieverMemory**                | Stores conversations in a vector database             | Semantic memory            | Long-term memory             | Retrieve similar past conversations using FAISS |
+| **MotorheadMemory** *(community integration)* | External persistent memory backend                    | Persistent conversations   | Production chatbots          | Shared chat history across sessions             |
+| **ZepMemory** *(community integration)*       | Uses Zep for long-term conversational memory          | Persistent semantic memory | AI assistants                | Personal AI that remembers previous chats       |
+| **RedisChatMessageHistory**                   | Stores chat history in Redis                          | Persistent history         | Scalable deployments         | Multi-user chatbot                              |
+| **SQLChatMessageHistory**                     | Stores chat history in SQL databases                  | Persistent history         | Enterprise applications      | Customer service platform                       |
+| **FileChatMessageHistory**                    | Saves conversations to a local file                   | File-based history         | Local testing                | Desktop chatbot                                 |
+| **PostgresChatMessageHistory**                | Stores conversations in PostgreSQL                    | Persistent history         | Production systems           | SaaS AI assistant                               |
