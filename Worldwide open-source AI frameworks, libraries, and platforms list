@@ -1,0 +1,520 @@
+| No. | Framework / Library / Platform | Country                                  | Year | Primary Real-Time Usage         | Category                | Open Source |
+| --: | ------------------------------ | ---------------------------------------- | ---- | ------------------------------- | ----------------------- | ----------- |
+|   1 | LangChain                      | 🇺🇸 USA                                 | 2022 | AI Chatbots, RAG, AI Assistants | LLM Framework           | ✅           |
+|   2 | LangGraph                      | 🇺🇸 USA                                 | 2024 | Multi-Agent AI Systems          | Agent Framework         | ✅           |
+|   3 | AutoGen                        | 🇺🇸 USA                                 | 2023 | Multi-Agent Conversations       | Agent Framework         | ✅           |
+|   4 | CrewAI                         | 🇧🇷 Brazil                              | 2023 | Business AI Agents              | Agent Framework         | ✅           |
+|   5 | LlamaIndex                     | 🇺🇸 USA                                 | 2022 | Document Search, RAG            | RAG Framework           | ✅           |
+|   6 | Haystack                       | 🇩🇪 Germany                             | 2020 | Enterprise Search, QA Systems   | RAG Framework           | ✅           |
+|   7 | Semantic Kernel                | 🇺🇸 USA                                 | 2023 | Enterprise AI Applications      | AI Framework            | ✅           |
+|   8 | DSPy                           | 🇺🇸 USA                                 | 2023 | Prompt Engineering              | LLM Framework           | ✅           |
+|   9 | PydanticAI                     | 🇬🇧 UK                                  | 2024 | Type-Safe AI Agents             | Agent Framework         | ✅           |
+|  10 | OpenAI Agents SDK              | 🇺🇸 USA                                 | 2025 | AI Agent Development            | Agent SDK               | ✅           |
+|  11 | Agno (Phidata)                 | 🇺🇸 USA                                 | 2024 | AI Workflows                    | Agent Framework         | ✅           |
+|  12 | SmolAgents                     | 🇫🇷 France                              | 2024 | Lightweight AI Agents           | Agent Framework         | ✅           |
+|  13 | MetaGPT                        | 🇨🇳 China                               | 2023 | AI Software Development Teams   | Agent Framework         | ✅           |
+|  14 | CAMEL AI                       | 🇨🇳 China                               | 2023 | Multi-Agent Collaboration       | Agent Framework         | ✅           |
+|  15 | AgentScope                     | 🇨🇳 China                               | 2024 | Enterprise AI Agents            | Agent Framework         | ✅           |
+|  16 | DB-GPT                         | 🇨🇳 China                               | 2023 | AI Database Assistant           | Database AI             | ✅           |
+|  17 | OpenManus                      | 🇨🇳 China                               | 2025 | Autonomous AI Agents            | Agent Framework         | ✅           |
+|  18 | ModelScope Agent               | 🇨🇳 China                               | 2024 | AI Agent Development            | Agent Framework         | ✅           |
+|  19 | XinHaiLLM                      | 🇨🇳 China                               | 2024 | Multi-Agent Research            | Research Framework      | ✅           |
+|  20 | Qwen-Agent                     | 🇨🇳 China                               | 2024 | LLM Agents                      | Agent Framework         | ✅           |
+|  21 | PaddlePaddle                   | 🇨🇳 China                               | 2016 | Deep Learning Applications      | Deep Learning           | ✅           |
+|  22 | MindSpore                      | 🇨🇳 China                               | 2020 | AI Model Training               | Deep Learning           | ✅           |
+|  23 | OneFlow                        | 🇨🇳 China                               | 2020 | Distributed Deep Learning       | Deep Learning           | ✅           |
+|  24 | Colossal-AI                    | 🇨🇳 China                               | 2022 | Large Model Training            | LLM Infrastructure      | ✅           |
+|  25 | PyTorch                        | 🇺🇸 USA                                 | 2016 | AI Model Development            | Deep Learning           | ✅           |
+|  26 | TensorFlow                     | 🇺🇸 USA                                 | 2015 | ML & Deep Learning              | Deep Learning           | ✅           |
+|  27 | Keras                          | 🇫🇷 France                              | 2015 | Neural Network Development      | Deep Learning           | ✅           |
+|  28 | JAX                            | 🇺🇸 USA                                 | 2018 | Research & High-Performance AI  | ML Framework            | ✅           |
+|  29 | MLX                            | 🇺🇸 USA                                 | 2023 | Apple Silicon AI Development    | ML Framework            | ✅           |
+|  30 | Chainer                        | 🇯🇵 Japan                               | 2015 | Deep Learning Research          | Deep Learning           | ✅           |
+|  31 | NNabla                         | 🇯🇵 Japan                               | 2017 | Neural Network Research         | Deep Learning           | ✅           |
+|  32 | Ray                            | 🇺🇸 USA                                 | 2017 | Distributed AI & ML             | Distributed Computing   | ✅           |
+|  33 | Horovod                        | 🇺🇸 USA                                 | 2017 | Distributed Model Training      | Distributed Computing   | ✅           |
+|  34 | DeepSpeed                      | 🇺🇸 USA                                 | 2020 | Large Language Model Training   | LLM Infrastructure      | ✅           |
+|  35 | ONNX Runtime                   | 🇺🇸 USA                                 | 2019 | AI Model Inference              | Model Deployment        | ✅           |
+|  36 | FastAI                         | 🇺🇸 USA                                 | 2018 | AI Education & Applications     | Deep Learning           | ✅           |
+|  37 | Hugging Face Transformers      | 🇫🇷 France                              | 2019 | NLP, LLM Applications           | NLP Library             | ✅           |
+|  38 | Sentence Transformers          | 🇬🇧 UK                                  | 2019 | Embeddings & Semantic Search    | NLP Library             | ✅           |
+|  39 | spaCy                          | 🇩🇪 Germany                             | 2015 | NLP Pipelines                   | NLP Library             | ✅           |
+|  40 | FAISS                          | 🇺🇸 USA                                 | 2017 | Vector Search                   | Vector Database Library | ✅           |
+|  41 | Chroma                         | 🇺🇸 USA                                 | 2022 | Vector Database                 | Vector Database         | ✅           |
+|  42 | Milvus                         | 🇨🇳 China                               | 2019 | Large-Scale Vector Search       | Vector Database         | ✅           |
+|  43 | Weaviate                       | 🇳🇱 Netherlands                         | 2019 | Semantic Search                 | Vector Database         | ✅           |
+|  44 | Qdrant                         | 🇩🇪 Germany                             | 2021 | AI Search Engines               | Vector Database         | ✅           |
+|  45 | Apache Mahout                  | 🇺🇸 USA                                 | 2008 | Machine Learning                | ML Library              | ✅           |
+|  46 | Apache Spark MLlib             | 🇺🇸 USA                                 | 2014 | Big Data Machine Learning       | ML Library              | ✅           |
+|  47 | Scikit-learn                   | 🇫🇷 France                              | 2007 | Classical Machine Learning      | ML Library              | ✅           |
+|  48 | XGBoost                        | 🇺🇸 USA                                 | 2014 | Classification & Regression     | ML Library              | ✅           |
+|  49 | LightGBM                       | 🇲🇸 Microsoft (originating development) | 2017 | Gradient Boosting               | ML Library              | ✅           |
+|  50 | CatBoost                       | 🇷🇺 Russia                              | 2017 | Categorical Data ML             | ML Library              | ✅           |
+| No. | Framework / Library / Platform | Country             | Year | Primary Real-Time Usage                    | Category          | Open Source |
+| --: | ------------------------------ | ------------------- | ---- | ------------------------------------------ | ----------------- | ----------- |
+|  51 | OpenCV                         | 🇺🇸 USA            | 2000 | Face Detection, Image Processing           | Computer Vision   | ✅           |
+|  52 | Detectron2                     | 🇺🇸 USA            | 2019 | Object Detection                           | Computer Vision   | ✅           |
+|  53 | MMDetection                    | 🇨🇳 China          | 2018 | Object Detection                           | Computer Vision   | ✅           |
+|  54 | MMEngine                       | 🇨🇳 China          | 2022 | AI Training Framework                      | AI Engine         | ✅           |
+|  55 | MMClassification               | 🇨🇳 China          | 2019 | Image Classification                       | Computer Vision   | ✅           |
+|  56 | MMSegmentation                 | 🇨🇳 China          | 2020 | Image Segmentation                         | Computer Vision   | ✅           |
+|  57 | MMPose                         | 🇨🇳 China          | 2020 | Human Pose Estimation                      | Computer Vision   | ✅           |
+|  58 | OpenMMLab                      | 🇨🇳 China          | 2018 | Computer Vision Ecosystem                  | AI Platform       | ✅           |
+|  59 | YOLOv5                         | 🇺🇸 USA            | 2020 | Real-Time Object Detection                 | Computer Vision   | ✅           |
+|  60 | Ultralytics YOLO               | 🇺🇸 USA            | 2023 | Detection, Segmentation, Pose              | Computer Vision   | ✅           |
+|  61 | MediaPipe                      | 🇺🇸 USA            | 2019 | Face, Hand & Pose Tracking                 | Computer Vision   | ✅           |
+|  62 | Albumentations                 | 🇺🇦 Ukraine        | 2018 | Image Augmentation                         | Computer Vision   | ✅           |
+|  63 | Kornia                         | 🇪🇺 Europe         | 2019 | Differentiable Vision                      | Computer Vision   | ✅           |
+|  64 | MONAI                          | 🇺🇸 USA            | 2020 | Medical Imaging AI                         | Healthcare AI     | ✅           |
+|  65 | PaddleOCR                      | 🇨🇳 China          | 2020 | OCR & Document Recognition                 | OCR               | ✅           |
+|  66 | EasyOCR                        | 🇯🇵 Japan          | 2020 | Optical Character Recognition              | OCR               | ✅           |
+|  67 | Tesseract OCR                  | 🇺🇸 USA            | 2005 | Text Extraction                            | OCR               | ✅           |
+|  68 | Whisper                        | 🇺🇸 USA            | 2022 | Speech-to-Text                             | Speech AI         | ✅           |
+|  69 | Coqui STT                      | 🇩🇪 Germany        | 2021 | Speech Recognition                         | Speech AI         | ✅           |
+|  70 | Coqui TTS                      | 🇩🇪 Germany        | 2020 | Text-to-Speech                             | Speech AI         | ✅           |
+|  71 | ESPnet                         | 🇯🇵 Japan          | 2018 | Speech Recognition & TTS                   | Speech AI         | ✅           |
+|  72 | SpeechBrain                    | 🇨🇭 Switzerland    | 2021 | Speech Processing                          | Speech AI         | ✅           |
+|  73 | NVIDIA NeMo                    | 🇺🇸 USA            | 2020 | Conversational AI                          | Speech & LLM      | ✅           |
+|  74 | Kaldi                          | 🇺🇸 USA            | 2011 | Automatic Speech Recognition               | Speech AI         | ✅           |
+|  75 | Rasa                           | 🇩🇪 Germany        | 2016 | Conversational AI Chatbots                 | Chatbot Framework | ✅           |
+|  76 | Botpress Community             | 🇨🇦 Canada         | 2017 | AI Chatbots                                | Chatbot Platform  | ✅           |
+|  77 | DeepPavlov                     | 🇷🇺 Russia         | 2017 | NLP & Chatbots                             | NLP Framework     | ✅           |
+|  78 | AllenNLP                       | 🇺🇸 USA            | 2018 | NLP Research                               | NLP Framework     | ✅           |
+|  79 | Flair                          | 🇩🇪 Germany        | 2018 | NLP Pipelines                              | NLP Library       | ✅           |
+|  80 | Stanza                         | 🇺🇸 USA            | 2020 | NLP Processing                             | NLP Library       | ✅           |
+|  81 | Gensim                         | 🇨🇿 Czech Republic | 2010 | Topic Modelling                            | NLP Library       | ✅           |
+|  82 | BERTopic                       | 🇳🇱 Netherlands    | 2022 | Topic Modelling                            | NLP Library       | ✅           |
+|  83 | DGL (Deep Graph Library)       | 🇺🇸 USA            | 2018 | Graph Neural Networks                      | Graph AI          | ✅           |
+|  84 | PyTorch Geometric              | 🇩🇪 Germany        | 2019 | Graph Learning                             | Graph AI          | ✅           |
+|  85 | Spektral                       | 🇬🇧 UK             | 2020 | Graph Neural Networks                      | Graph AI          | ✅           |
+|  86 | RLlib                          | 🇺🇸 USA            | 2019 | Reinforcement Learning                     | RL Framework      | ✅           |
+|  87 | Stable-Baselines3              | 🇫🇷 France         | 2020 | Reinforcement Learning                     | RL Library        | ✅           |
+|  88 | Gymnasium                      | 🇺🇸 USA            | 2022 | RL Environments                            | RL Framework      | ✅           |
+|  89 | PettingZoo                     | 🇺🇸 USA            | 2020 | Multi-Agent Reinforcement Learning         | RL Framework      | ✅           |
+|  90 | CleanRL                        | 🇺🇸 USA            | 2021 | Reinforcement Learning                     | RL Library        | ✅           |
+|  91 | Hugging Face TRL               | 🇫🇷 France         | 2023 | RLHF for LLMs                              | LLM Training      | ✅           |
+|  92 | PEFT                           | 🇫🇷 France         | 2023 | Efficient LLM Fine-Tuning                  | LLM Training      | ✅           |
+|  93 | Axolotl                        | 🇺🇸 USA            | 2023 | LLM Fine-Tuning                            | LLM Training      | ✅           |
+|  94 | TRLX                           | 🇺🇸 USA            | 2022 | Reinforcement Learning from Human Feedback | LLM Training      | ✅           |
+|  95 | vLLM                           | 🇺🇸 USA            | 2023 | High-Speed LLM Inference                   | LLM Serving       | ✅           |
+|  96 | Ollama                         | 🇺🇸 USA            | 2023 | Local LLM Deployment                       | LLM Platform      | ✅           |
+|  97 | LM Studio                      | 🇺🇸 USA            | 2023 | Local LLM Testing                          | LLM Platform      | ✅           |
+|  98 | BentoML                        | 🇺🇸 USA            | 2020 | AI Model Deployment                        | MLOps             | ✅           |
+|  99 | MLflow                         | 🇺🇸 USA            | 2018 | ML Lifecycle Management                    | MLOps             | ✅           |
+| 100 | Kubeflow                       | 🇺🇸 USA            | 2018 | ML Pipelines on Kubernetes                 | MLOps             | ✅           |
+| No. | Framework / Library / Platform | Country      | Year | Primary Real-Time Usage          | Category             | Open Source |
+| --: | ------------------------------ | ------------ | ---- | -------------------------------- | -------------------- | ----------- |
+| 101 | Airflow                        | 🇺🇸 USA     | 2015 | AI Workflow Automation           | Workflow             | ✅           |
+| 102 | Prefect                        | 🇺🇸 USA     | 2018 | ML Pipeline Orchestration        | Workflow             | ✅           |
+| 103 | Dagster                        | 🇺🇸 USA     | 2019 | Data & AI Pipelines              | Workflow             | ✅           |
+| 104 | Kedro                          | 🇬🇧 UK      | 2019 | Data Science Pipelines           | MLOps                | ✅           |
+| 105 | DVC (Data Version Control)     | 🇺🇦 Ukraine | 2017 | Dataset Versioning               | MLOps                | ✅           |
+| 106 | ClearML                        | 🇮🇱 Israel  | 2020 | Experiment Tracking              | MLOps                | ✅           |
+| 107 | Metaflow                       | 🇺🇸 USA     | 2019 | ML Workflow Management           | MLOps                | ✅           |
+| 108 | ZenML                          | 🇦🇹 Austria | 2021 | End-to-End ML Pipelines          | MLOps                | ✅           |
+| 109 | Feast                          | 🇺🇸 USA     | 2019 | Feature Store                    | MLOps                | ✅           |
+| 110 | Flyte                          | 🇺🇸 USA     | 2020 | AI Workflow Orchestration        | Workflow             | ✅           |
+| 111 | Polyaxon CE                    | 🇬🇧 UK      | 2018 | AI Experiment Management         | MLOps                | ✅           |
+| 112 | Pachyderm                      | 🇺🇸 USA     | 2015 | Data Pipelines                   | MLOps                | ✅           |
+| 113 | Label Studio                   | 🇺🇸 USA     | 2019 | Data Annotation                  | Annotation           | ✅           |
+| 114 | CVAT                           | 🇺🇸 USA     | 2018 | Image & Video Annotation         | Annotation           | ✅           |
+| 115 | FiftyOne                       | 🇺🇸 USA     | 2020 | Computer Vision Dataset Analysis | Computer Vision      | ✅           |
+| 116 | Roboflow Supervision           | 🇺🇸 USA     | 2023 | Vision Model Evaluation          | Computer Vision      | ✅           |
+| 117 | OpenLabeling                   | 🇧🇷 Brazil  | 2018 | Image Annotation                 | Annotation           | ✅           |
+| 118 | LabelImg                       | 🇨🇳 China   | 2015 | Bounding Box Annotation          | Annotation           | ✅           |
+| 119 | VIA (VGG Image Annotator)      | 🇬🇧 UK      | 2016 | Image Annotation                 | Annotation           | ✅           |
+| 120 | Supervisely Community          | 🇺🇸 USA     | 2018 | Vision Dataset Management        | Annotation           | ✅           |
+| 121 | OpenNMT                        | 🇨🇦 Canada  | 2017 | Machine Translation              | NLP                  | ✅           |
+| 122 | Fairseq                        | 🇺🇸 USA     | 2017 | NLP & LLM Training               | NLP                  | ✅           |
+| 123 | MarianNMT                      | 🇩🇪 Germany | 2017 | Neural Machine Translation       | NLP                  | ✅           |
+| 124 | ParlAI                         | 🇺🇸 USA     | 2017 | Dialogue Systems                 | NLP                  | ✅           |
+| 125 | OpenPrompt                     | 🇨🇳 China   | 2021 | Prompt Learning                  | NLP                  | ✅           |
+| 126 | TextAttack                     | 🇺🇸 USA     | 2020 | NLP Robustness Testing           | NLP                  | ✅           |
+| 127 | FARM                           | 🇩🇪 Germany | 2019 | NLP Pipelines                    | NLP                  | ✅           |
+| 128 | Jiant                          | 🇺🇸 USA     | 2018 | NLP Benchmarking                 | NLP                  | ✅           |
+| 129 | TorchText                      | 🇺🇸 USA     | 2017 | NLP Dataset Processing           | NLP                  | ✅           |
+| 130 | AllenAct                       | 🇺🇸 USA     | 2020 | Embodied AI                      | Robotics AI          | ✅           |
+| 131 | Isaac Lab                      | 🇺🇸 USA     | 2024 | Robotics AI Training             | Robotics             | ✅           |
+| 132 | ROS (Robot Operating System)   | 🇺🇸 USA     | 2007 | Robotics                         | Robotics             | ✅           |
+| 133 | ROS2                           | 🇺🇸 USA     | 2017 | Autonomous Robots                | Robotics             | ✅           |
+| 134 | Open3D                         | 🇺🇸 USA     | 2018 | 3D Vision                        | Computer Vision      | ✅           |
+| 135 | PyBullet                       | 🇺🇸 USA     | 2017 | Robot Simulation                 | Robotics             | ✅           |
+| 136 | Habitat Lab                    | 🇺🇸 USA     | 2019 | Embodied AI Research             | Robotics AI          | ✅           |
+| 137 | ManiSkill                      | 🇨🇳 China   | 2021 | Robot Learning                   | Robotics             | ✅           |
+| 138 | OpenRLHF                       | 🇨🇳 China   | 2024 | RLHF Training                    | LLM Training         | ✅           |
+| 139 | Verl                           | 🇨🇳 China   | 2024 | Reinforcement Learning for LLMs  | LLM Training         | ✅           |
+| 140 | FastChat                       | 🇺🇸 USA     | 2023 | LLM Serving                      | LLM Platform         | ✅           |
+| 141 | LitGPT                         | 🇺🇸 USA     | 2023 | LLM Training                     | LLM Framework        | ✅           |
+| 142 | TinyGrad                       | 🇺🇸 USA     | 2021 | Deep Learning Research           | Deep Learning        | ✅           |
+| 143 | Ivy                            | 🇬🇧 UK      | 2022 | Unified ML Framework             | ML Framework         | ✅           |
+| 144 | Composer                       | 🇺🇸 USA     | 2022 | Efficient Model Training         | Deep Learning        | ✅           |
+| 145 | Megatron-LM                    | 🇺🇸 USA     | 2019 | Large Language Model Training    | LLM Framework        | ✅           |
+| 146 | MosaicML Streaming             | 🇺🇸 USA     | 2022 | Large Dataset Training           | Data Pipeline        | ✅           |
+| 147 | DeepLake                       | 🇺🇸 USA     | 2022 | AI Data Storage                  | Vector Data Platform | ✅           |
+| 148 | LanceDB                        | 🇺🇸 USA     | 2023 | Vector Database                  | Vector Database      | ✅           |
+| 149 | Redis Vector Search            | 🇺🇸 USA     | 2022 | AI Semantic Search               | Vector Database      | ✅           |
+| 150 | pgvector                       | 🇺🇸 USA     | 2023 | PostgreSQL Vector Search         | Vector Database      | ✅           |
+| No. | Framework / Library / Platform     | Country          | Year | Primary Real-Time Usage           | Category               | Open Source |
+| --: | ---------------------------------- | ---------------- | ---- | --------------------------------- | ---------------------- | ----------- |
+| 151 | OpenVINO                           | 🇺🇸 USA (Intel) | 2018 | AI Inference Optimization         | Edge AI                | ✅           |
+| 152 | TensorRT                           | 🇺🇸 USA         | 2017 | High-Speed AI Inference           | Inference Engine       | ✅           |
+| 153 | TVM (Apache TVM)                   | 🇺🇸 USA         | 2018 | Deep Learning Compiler            | AI Compiler            | ✅           |
+| 154 | OpenXLA                            | 🇺🇸 USA         | 2023 | LLM Compilation & Optimization    | AI Compiler            | ✅           |
+| 155 | Triton Inference Server            | 🇺🇸 USA         | 2019 | AI Model Serving                  | Model Serving          | ✅           |
+| 156 | Apache MXNet                       | 🇺🇸 USA         | 2015 | Deep Learning                     | Deep Learning          | ✅           |
+| 157 | CNTK (Microsoft Cognitive Toolkit) | 🇺🇸 USA         | 2016 | Neural Networks                   | Deep Learning          | ✅           |
+| 158 | Caffe                              | 🇺🇸 USA         | 2014 | Image Classification              | Computer Vision        | ✅           |
+| 159 | Caffe2                             | 🇺🇸 USA         | 2017 | Mobile AI                         | Deep Learning          | ✅           |
+| 160 | Darknet                            | 🇺🇸 USA         | 2013 | YOLO Training                     | Computer Vision        | ✅           |
+| 161 | MXFusion                           | 🇺🇸 USA         | 2019 | Probabilistic ML                  | Machine Learning       | ✅           |
+| 162 | Ludwig                             | 🇺🇸 USA         | 2019 | No-Code AI                        | AutoML                 | ✅           |
+| 163 | AutoKeras                          | 🇫🇷 France      | 2018 | AutoML                            | AutoML                 | ✅           |
+| 164 | AutoGluon                          | 🇺🇸 USA         | 2020 | Automated Machine Learning        | AutoML                 | ✅           |
+| 165 | FLAML                              | 🇺🇸 USA         | 2021 | Fast AutoML                       | AutoML                 | ✅           |
+| 166 | H2O-3                              | 🇺🇸 USA         | 2015 | Enterprise Machine Learning       | AutoML                 | ✅           |
+| 167 | Auto-Sklearn                       | 🇩🇪 Germany     | 2015 | Automated ML                      | AutoML                 | ✅           |
+| 168 | TPOT                               | 🇺🇸 USA         | 2016 | Evolutionary AutoML               | AutoML                 | ✅           |
+| 169 | PyCaret                            | 🇮🇳 India       | 2020 | Low-Code Machine Learning         | AutoML                 | ✅           |
+| 170 | EvalML                             | 🇺🇸 USA         | 2020 | Automated ML Pipelines            | AutoML                 | ✅           |
+| 171 | Optuna                             | 🇯🇵 Japan       | 2018 | Hyperparameter Optimization       | Optimization           | ✅           |
+| 172 | Hyperopt                           | 🇺🇸 USA         | 2013 | Hyperparameter Search             | Optimization           | ✅           |
+| 173 | Ray Tune                           | 🇺🇸 USA         | 2018 | Distributed Hyperparameter Tuning | Optimization           | ✅           |
+| 174 | Nevergrad                          | 🇫🇷 France      | 2018 | Black-box Optimization            | Optimization           | ✅           |
+| 175 | BoTorch                            | 🇺🇸 USA         | 2020 | Bayesian Optimization             | Optimization           | ✅           |
+| 176 | Ax Platform                        | 🇺🇸 USA         | 2019 | Adaptive Experimentation          | Optimization           | ✅           |
+| 177 | Captum                             | 🇺🇸 USA         | 2020 | Explainable AI                    | XAI                    | ✅           |
+| 178 | SHAP                               | 🇺🇸 USA         | 2018 | Model Explainability              | Explainable AI         | ✅           |
+| 179 | LIME                               | 🇺🇸 USA         | 2016 | AI Decision Explanation           | Explainable AI         | ✅           |
+| 180 | ELI5                               | 🇷🇺 Russia      | 2017 | ML Model Interpretation           | Explainable AI         | ✅           |
+| 181 | Alibi                              | 🇬🇧 UK          | 2019 | AI Explainability                 | Explainable AI         | ✅           |
+| 182 | Alibi Detect                       | 🇬🇧 UK          | 2020 | Drift & Outlier Detection         | Monitoring             | ✅           |
+| 183 | Evidently AI                       | 🇬🇧 UK          | 2021 | AI Monitoring                     | Monitoring             | ✅           |
+| 184 | WhyLogs                            | 🇺🇸 USA         | 2021 | Data Quality Monitoring           | Monitoring             | ✅           |
+| 185 | Great Expectations                 | 🇺🇸 USA         | 2018 | Data Validation                   | Data Engineering       | ✅           |
+| 186 | DeepChecks                         | 🇮🇱 Israel      | 2021 | AI Model Validation               | Monitoring             | ✅           |
+| 187 | Pandera                            | 🇺🇸 USA         | 2020 | Data Validation                   | Data Engineering       | ✅           |
+| 188 | Cleanlab                           | 🇺🇸 USA         | 2020 | Data Error Detection              | Data Quality           | ✅           |
+| 189 | DataProfiler                       | 🇺🇸 USA         | 2019 | Dataset Profiling                 | Data Engineering       | ✅           |
+| 190 | PyOD                               | 🇨🇳 China       | 2019 | Outlier Detection                 | Machine Learning       | ✅           |
+| 191 | River                              | 🇫🇷 France      | 2020 | Online Machine Learning           | Streaming ML           | ✅           |
+| 192 | Creme                              | 🇫🇷 France      | 2019 | Incremental Learning              | Streaming ML           | ✅           |
+| 193 | Vowpal Wabbit                      | 🇺🇸 USA         | 2007 | Large-Scale Online Learning       | Machine Learning       | ✅           |
+| 194 | Surprise                           | 🇫🇷 France      | 2017 | Recommendation Systems            | Recommender Systems    | ✅           |
+| 195 | RecBole                            | 🇨🇳 China       | 2021 | Recommendation Systems            | Recommender Systems    | ✅           |
+| 196 | Cornac                             | 🇸🇬 Singapore   | 2018 | Recommendation Systems            | Recommender Systems    | ✅           |
+| 197 | Implicit                           | 🇺🇸 USA         | 2017 | Recommendation Engines            | Recommender Systems    | ✅           |
+| 198 | Merlin                             | 🇺🇸 USA         | 2021 | Deep Recommendation Systems       | Recommender Systems    | ✅           |
+| 199 | TorchRec                           | 🇺🇸 USA         | 2022 | Large-Scale Recommenders          | Recommendation AI      | ✅           |
+| 200 | OpenSpiel                          | 🇬🇧 UK          | 2019 | Reinforcement Learning Research   | Reinforcement Learning | ✅           |
+| No. | Framework / Library / Platform   | Country        | Year | Primary Real-Time Usage           | Category           | Open Source |
+| --: | -------------------------------- | -------------- | ---- | --------------------------------- | ------------------ | ----------- |
+| 201 | Lightning AI (PyTorch Lightning) | 🇺🇸 USA       | 2019 | Simplified Deep Learning Training | Deep Learning      | ✅           |
+| 202 | Lightning Fabric                 | 🇺🇸 USA       | 2023 | Distributed AI Training           | Deep Learning      | ✅           |
+| 203 | TorchMetrics                     | 🇺🇸 USA       | 2020 | Model Evaluation Metrics          | Deep Learning      | ✅           |
+| 204 | TorchVision                      | 🇺🇸 USA       | 2017 | Computer Vision Models            | Computer Vision    | ✅           |
+| 205 | TorchAudio                       | 🇺🇸 USA       | 2018 | Audio Processing                  | Speech AI          | ✅           |
+| 206 | TorchData                        | 🇺🇸 USA       | 2022 | Data Loading Pipelines            | Data Pipeline      | ✅           |
+| 207 | TorchServe                       | 🇺🇸 USA       | 2020 | PyTorch Model Deployment          | Model Serving      | ✅           |
+| 208 | Deep Java Library (DJL)          | 🇺🇸 USA       | 2019 | Java-Based AI Development         | Deep Learning      | ✅           |
+| 209 | FastDeploy                       | 🇨🇳 China     | 2022 | Cross-Platform AI Deployment      | Deployment         | ✅           |
+| 210 | OpenPifPaf                       | 🇩🇪 Germany   | 2019 | Human Pose Estimation             | Computer Vision    | ✅           |
+| 211 | MMOCR                            | 🇨🇳 China     | 2021 | OCR & Document AI                 | OCR                | ✅           |
+| 212 | PaddleDetection                  | 🇨🇳 China     | 2019 | Object Detection                  | Computer Vision    | ✅           |
+| 213 | PaddleSeg                        | 🇨🇳 China     | 2020 | Image Segmentation                | Computer Vision    | ✅           |
+| 214 | PaddleClas                       | 🇨🇳 China     | 2020 | Image Classification              | Computer Vision    | ✅           |
+| 215 | PaddleNLP                        | 🇨🇳 China     | 2020 | NLP & LLM Applications            | NLP                | ✅           |
+| 216 | PaddleSpeech                     | 🇨🇳 China     | 2021 | Speech Recognition & TTS          | Speech AI          | ✅           |
+| 217 | OpenCompass                      | 🇨🇳 China     | 2023 | LLM Benchmarking                  | LLM Evaluation     | ✅           |
+| 218 | LM Evaluation Harness            | 🇺🇸 USA       | 2021 | LLM Benchmarking                  | Evaluation         | ✅           |
+| 219 | Promptfoo                        | 🇺🇸 USA       | 2023 | Prompt Testing & Evaluation       | Prompt Engineering | ✅           |
+| 220 | Ragas                            | 🇮🇳 India     | 2023 | RAG Evaluation                    | RAG Evaluation     | ✅           |
+| 221 | TruLens                          | 🇺🇸 USA       | 2023 | LLM & RAG Evaluation              | Evaluation         | ✅           |
+| 222 | Langfuse                         | 🇩🇪 Germany   | 2023 | LLM Observability                 | Monitoring         | ✅           |
+| 223 | Helicone                         | 🇺🇸 USA       | 2023 | LLM Analytics                     | Monitoring         | ✅           |
+| 224 | OpenLLMetry                      | 🇺🇸 USA       | 2024 | LLM Telemetry                     | Monitoring         | ✅           |
+| 225 | Phoenix (Arize OSS)              | 🇺🇸 USA       | 2023 | AI Observability                  | Monitoring         | ✅           |
+| 226 | PromptFlow                       | 🇺🇸 USA       | 2023 | LLM Workflow Development          | LLM Workflow       | ✅           |
+| 227 | Guidance                         | 🇺🇸 USA       | 2023 | Structured Prompt Programming     | Prompt Engineering | ✅           |
+| 228 | Outlines                         | 🇺🇸 USA       | 2023 | Structured LLM Generation         | LLM Framework      | ✅           |
+| 229 | Instructor                       | 🇺🇸 USA       | 2023 | Structured LLM Outputs            | LLM Utility        | ✅           |
+| 230 | Guardrails AI                    | 🇺🇸 USA       | 2023 | LLM Output Validation             | AI Safety          | ✅           |
+| 231 | LiteLLM                          | 🇺🇸 USA       | 2023 | Multi-LLM Gateway                 | LLM Gateway        | ✅           |
+| 232 | OpenRouter SDK                   | 🌍 Global      | 2024 | Unified LLM API Access            | API Gateway        | ✅           |
+| 233 | EmbedChain                       | 🇮🇳 India     | 2023 | Build RAG Applications            | RAG Framework      | ✅           |
+| 234 | Flowise                          | 🇸🇬 Singapore | 2023 | Visual LLM Workflow Builder       | Low-Code AI        | ✅           |
+| 235 | Langflow                         | 🇺🇸 USA       | 2023 | Visual LangChain Builder          | Low-Code AI        | ✅           |
+| 236 | Dify Community                   | 🇨🇳 China     | 2023 | AI Application Platform           | Low-Code AI        | ✅           |
+| 237 | Open WebUI                       | 🌍 Global      | 2024 | Local ChatGPT Interface           | AI Platform        | ✅           |
+| 238 | LibreChat                        | 🌍 Global      | 2023 | Multi-LLM Chat Interface          | AI Platform        | ✅           |
+| 239 | AnythingLLM                      | 🇺🇸 USA       | 2023 | Private RAG Chatbot               | RAG Platform       | ✅           |
+| 240 | LocalAI                          | 🇮🇹 Italy     | 2023 | Run LLMs Locally                  | Local AI           | ✅           |
+| 241 | GPT4All                          | 🇺🇸 USA       | 2023 | Offline AI Assistant              | Local LLM          | ✅           |
+| 242 | Jan                              | 🇸🇬 Singapore | 2023 | Desktop LLM Assistant             | Local LLM          | ✅           |
+| 243 | Hayhooks                         | 🇩🇪 Germany   | 2024 | Haystack API Serving              | API Framework      | ✅           |
+| 244 | FastAPI                          | 🇺🇸 USA       | 2018 | AI Backend APIs                   | Web Framework      | ✅           |
+| 245 | Gradio                           | 🇺🇸 USA       | 2019 | AI Web Applications               | UI Framework       | ✅           |
+| 246 | Streamlit                        | 🇺🇸 USA       | 2019 | AI Dashboards                     | UI Framework       | ✅           |
+| 247 | Bento Server                     | 🇺🇸 USA       | 2021 | AI Model APIs                     | Deployment         | ✅           |
+| 248 | Seldon Core                      | 🇬🇧 UK        | 2018 | Kubernetes AI Deployment          | MLOps              | ✅           |
+| 249 | KServe                           | 🇺🇸 USA       | 2021 | Scalable Model Serving            | MLOps              | ✅           |
+| 250 | Feast UI                         | 🇺🇸 USA       | 2023 | Feature Store Management          | MLOps              | ✅           |
+| No. | Framework / Library / Platform  | Country       | Year | Primary Real-Time Usage             | Category          | Open Source |
+| --: | ------------------------------- | ------------- | ---- | ----------------------------------- | ----------------- | ----------- |
+| 251 | OpenLLM                         | 🇺🇸 USA      | 2023 | Deploy Open-Source LLMs             | LLM Deployment    | ✅           |
+| 252 | Xinference                      | 🇨🇳 China    | 2023 | LLM & Embedding Serving             | AI Inference      | ✅           |
+| 253 | Text Generation Inference (TGI) | 🇫🇷 France   | 2023 | High-Performance LLM Serving        | LLM Serving       | ✅           |
+| 254 | SkyPilot                        | 🇺🇸 USA      | 2023 | Multi-Cloud AI Training             | Cloud AI          | ✅           |
+| 255 | Modal Client SDK                | 🇺🇸 USA      | 2023 | Serverless AI Workloads             | AI Infrastructure | ✅           |
+| 256 | Runhouse                        | 🇺🇸 USA      | 2023 | Distributed AI Compute              | AI Infrastructure | ✅           |
+| 257 | OpenRL                          | 🇨🇳 China    | 2023 | Reinforcement Learning              | RL Framework      | ✅           |
+| 258 | ElegantRL                       | 🇨🇳 China    | 2021 | Deep Reinforcement Learning         | RL Framework      | ✅           |
+| 259 | Tianshou                        | 🇨🇳 China    | 2020 | Reinforcement Learning              | RL Framework      | ✅           |
+| 260 | MushroomRL                      | 🇮🇹 Italy    | 2019 | Reinforcement Learning Research     | RL Library        | ✅           |
+| 261 | DI-engine                       | 🇨🇳 China    | 2021 | Reinforcement Learning Platform     | RL Platform       | ✅           |
+| 262 | Acme                            | 🇬🇧 UK       | 2020 | Reinforcement Learning Research     | RL Framework      | ✅           |
+| 263 | TF-Agents                       | 🇺🇸 USA      | 2018 | TensorFlow Reinforcement Learning   | RL Framework      | ✅           |
+| 264 | Dopamine                        | 🇺🇸 USA      | 2018 | Reinforcement Learning Research     | RL Framework      | ✅           |
+| 265 | Garage                          | 🇺🇸 USA      | 2019 | RL Algorithms                       | RL Framework      | ✅           |
+| 266 | RL Coach                        | 🇮🇱 Israel   | 2018 | Reinforcement Learning              | RL Framework      | ✅           |
+| 267 | Isaac Gym                       | 🇺🇸 USA      | 2021 | Robotics Reinforcement Learning     | Robotics AI       | ✅           |
+| 268 | OpenDroneMap                    | 🌍 Global     | 2017 | Drone Image Processing              | Geospatial AI     | ✅           |
+| 269 | Raster Vision                   | 🇺🇸 USA      | 2018 | Satellite Image Analysis            | Geospatial AI     | ✅           |
+| 270 | GeoPandas                       | 🇺🇸 USA      | 2014 | Spatial Data Analytics              | Geospatial        | ✅           |
+| 271 | Rasterio                        | 🇺🇸 USA      | 2013 | GIS Raster Processing               | Geospatial        | ✅           |
+| 272 | Detectree2                      | 🇬🇧 UK       | 2023 | Forest & Tree Detection             | Environmental AI  | ✅           |
+| 273 | TorchGeo                        | 🇺🇸 USA      | 2022 | Geospatial Deep Learning            | Geospatial AI     | ✅           |
+| 274 | EO-Learn                        | 🇸🇮 Slovenia | 2018 | Earth Observation AI                | Geospatial AI     | ✅           |
+| 275 | MMRotate                        | 🇨🇳 China    | 2021 | Rotated Object Detection            | Computer Vision   | ✅           |
+| 276 | MMTracking                      | 🇨🇳 China    | 2020 | Multi-Object Tracking               | Computer Vision   | ✅           |
+| 277 | MMAction2                       | 🇨🇳 China    | 2020 | Action Recognition                  | Computer Vision   | ✅           |
+| 278 | MMHuman3D                       | 🇨🇳 China    | 2021 | 3D Human Modeling                   | Computer Vision   | ✅           |
+| 279 | DeepFace                        | 🇹🇷 Turkey   | 2020 | Face Recognition                    | Computer Vision   | ✅           |
+| 280 | InsightFace                     | 🇨🇳 China    | 2019 | Face Recognition                    | Computer Vision   | ✅           |
+| 281 | FaceX-Zoo                       | 🇨🇳 China    | 2021 | Face Analysis                       | Computer Vision   | ✅           |
+| 282 | PaddleGAN                       | 🇨🇳 China    | 2020 | Image Generation                    | Generative AI     | ✅           |
+| 283 | Diffusers                       | 🇫🇷 France   | 2022 | Stable Diffusion & Image Generation | Generative AI     | ✅           |
+| 284 | InvokeAI                        | 🇺🇸 USA      | 2022 | Local Stable Diffusion              | Generative AI     | ✅           |
+| 285 | ComfyUI                         | 🌍 Global     | 2023 | Node-Based AI Image Generation      | Generative AI     | ✅           |
+| 286 | AUTOMATIC1111 WebUI             | 🌍 Global     | 2022 | Stable Diffusion Interface          | Generative AI     | ✅           |
+| 287 | Fooocus                         | 🌍 Global     | 2023 | Simplified Image Generation         | Generative AI     | ✅           |
+| 288 | ControlNet                      | 🇨🇳 China    | 2023 | Controlled Image Generation         | Generative AI     | ✅           |
+| 289 | Segment Anything (SAM)          | 🇺🇸 USA      | 2023 | Universal Image Segmentation        | Computer Vision   | ✅           |
+| 290 | MobileSAM                       | 🇨🇳 China    | 2023 | Lightweight Image Segmentation      | Computer Vision   | ✅           |
+| 291 | GroundingDINO                   | 🇨🇳 China    | 2023 | Open-Vocabulary Detection           | Computer Vision   | ✅           |
+| 292 | Grounded-SAM                    | 🇨🇳 China    | 2023 | Detection + Segmentation            | Computer Vision   | ✅           |
+| 293 | FastSAM                         | 🇨🇳 China    | 2023 | Fast Image Segmentation             | Computer Vision   | ✅           |
+| 294 | EdgeSAM                         | 🇨🇳 China    | 2023 | Edge Device Segmentation            | Computer Vision   | ✅           |
+| 295 | OpenSeeFace                     | 🇯🇵 Japan    | 2020 | Face Tracking                       | Computer Vision   | ✅           |
+| 296 | pyannote.audio                  | 🇫🇷 France   | 2019 | Speaker Diarization                 | Speech AI         | ✅           |
+| 297 | NeMo Guardrails                 | 🇺🇸 USA      | 2023 | Safe Conversational AI              | AI Safety         | ✅           |
+| 298 | OpenVoice                       | 🇨🇳 China    | 2024 | Voice Cloning                       | Speech AI         | ✅           |
+| 299 | CosyVoice                       | 🇨🇳 China    | 2024 | Multilingual Text-to-Speech         | Speech AI         | ✅           |
+| 300 | Fish Speech                     | 🇨🇳 China    | 2024 | Open Speech Synthesis               | Speech AI         | ✅           |
+| No. | Framework / Library / Platform | Country      | Year | Primary Real-Time Usage       | Category           | Open Source |
+| --: | ------------------------------ | ------------ | ---- | ----------------------------- | ------------------ | ----------- |
+| 301 | XTuner                         | 🇨🇳 China   | 2023 | LLM Fine-Tuning               | LLM Training       | ✅           |
+| 302 | LLaMA Factory                  | 🇨🇳 China   | 2024 | LLM Fine-Tuning               | LLM Training       | ✅           |
+| 303 | Swift (ModelScope Swift)       | 🇨🇳 China   | 2024 | Efficient LLM Training        | LLM Framework      | ✅           |
+| 304 | ms-swift                       | 🇨🇳 China   | 2024 | Multi-Model Fine-Tuning       | LLM Training       | ✅           |
+| 305 | Unsloth                        | 🇺🇸 USA     | 2024 | Fast LoRA Fine-Tuning         | LLM Training       | ✅           |
+| 306 | Axolotl WebUI                  | 🇺🇸 USA     | 2024 | GUI for LLM Fine-Tuning       | LLM Training       | ✅           |
+| 307 | OpenRLHF Trainer               | 🇨🇳 China   | 2024 | RLHF Training                 | LLM Training       | ✅           |
+| 308 | DeepSpeed Chat                 | 🇺🇸 USA     | 2023 | RLHF & ChatGPT Training       | LLM Training       | ✅           |
+| 309 | ColossalChat                   | 🇨🇳 China   | 2023 | ChatGPT-Style Model Training  | LLM Training       | ✅           |
+| 310 | ChatLearn                      | 🇨🇳 China   | 2024 | LLM Alignment                 | LLM Training       | ✅           |
+| 311 | llama.cpp                      | 🇺🇸 USA     | 2023 | Run LLMs on CPU               | LLM Inference      | ✅           |
+| 312 | ExLlamaV2                      | 🇺🇸 USA     | 2023 | Fast Quantized LLM Inference  | LLM Inference      | ✅           |
+| 313 | TensorRT-LLM                   | 🇺🇸 USA     | 2023 | GPU LLM Inference             | LLM Inference      | ✅           |
+| 314 | Aphrodite Engine               | 🌍 Global    | 2024 | High-Speed LLM Serving        | LLM Serving        | ✅           |
+| 315 | MLC-LLM                        | 🇺🇸 USA     | 2023 | Mobile & Edge LLM Deployment  | Edge AI            | ✅           |
+| 316 | SGLang                         | 🇺🇸 USA     | 2024 | Structured LLM Inference      | LLM Serving        | ✅           |
+| 317 | LMDeploy                       | 🇨🇳 China   | 2023 | Large Model Deployment        | LLM Deployment     | ✅           |
+| 318 | InferXLM                       | 🇨🇳 China   | 2024 | LLM Acceleration              | AI Infrastructure  | ✅           |
+| 319 | Xinference UI                  | 🇨🇳 China   | 2024 | Multi-Model Management        | AI Platform        | ✅           |
+| 320 | Infinity Embeddings            | 🇩🇪 Germany | 2024 | Embedding Server              | Embedding Platform | ✅           |
+| 321 | OpenHands                      | 🌍 Global    | 2024 | AI Software Engineering Agent | AI Agent           | ✅           |
+| 322 | OpenDevin                      | 🌍 Global    | 2024 | Autonomous Coding Agent       | AI Agent           | ✅           |
+| 323 | SWE-agent                      | 🇺🇸 USA     | 2024 | Software Engineering Agent    | AI Agent           | ✅           |
+| 324 | Aider                          | 🇺🇸 USA     | 2023 | AI Pair Programming           | AI Coding          | ✅           |
+| 325 | Continue.dev                   | 🇺🇸 USA     | 2023 | AI Coding Assistant           | Developer Tools    | ✅           |
+| 326 | Cline                          | 🌍 Global    | 2024 | VS Code AI Agent              | AI Coding          | ✅           |
+| 327 | Roo Code                       | 🌍 Global    | 2024 | Autonomous Coding Assistant   | AI Coding          | ✅           |
+| 328 | Open Interpreter               | 🇺🇸 USA     | 2023 | AI Executes Local Code        | AI Agent           | ✅           |
+| 329 | Devika AI                      | 🇮🇳 India   | 2024 | AI Software Engineer          | AI Agent           | ✅           |
+| 330 | AutoPR                         | 🇺🇸 USA     | 2023 | AI GitHub Pull Requests       | DevOps AI          | ✅           |
+| 331 | AutoCodeRover                  | 🇺🇸 USA     | 2024 | AI Bug Fixing                 | AI Coding          | ✅           |
+| 332 | RepoAgent                      | 🇨🇳 China   | 2024 | Repository Understanding      | AI Coding          | ✅           |
+| 333 | GPT Engineer                   | 🇸🇪 Sweden  | 2023 | Generate Software Projects    | AI Coding          | ✅           |
+| 334 | Smol Developer                 | 🇫🇷 France  | 2024 | Lightweight Coding Agent      | AI Agent           | ✅           |
+| 335 | Browser Use                    | 🌍 Global    | 2024 | AI Browser Automation         | AI Agent           | ✅           |
+| 336 | Stagehand                      | 🇺🇸 USA     | 2024 | Web Automation Agent          | AI Agent           | ✅           |
+| 337 | Crawl4AI                       | 🌍 Global    | 2024 | AI Web Crawling               | Web AI             | ✅           |
+| 338 | Firecrawl                      | 🇺🇸 USA     | 2024 | LLM-Friendly Web Crawling     | Web AI             | ✅           |
+| 339 | Jina AI Reader                 | 🇩🇪 Germany | 2024 | Web Content Extraction        | Retrieval          | ✅           |
+| 340 | MarkItDown                     | 🇺🇸 USA     | 2024 | Convert Documents to Markdown | Document AI        | ✅           |
+| 341 | Docling                        | 🇩🇪 Germany | 2024 | Intelligent Document Parsing  | Document AI        | ✅           |
+| 342 | MinerU                         | 🇨🇳 China   | 2024 | PDF Understanding             | Document AI        | ✅           |
+| 343 | Nougat                         | 🇩🇪 Germany | 2023 | OCR for Scientific Papers     | Document AI        | ✅           |
+| 344 | Pix2Text                       | 🇨🇳 China   | 2023 | OCR + Formula Recognition     | OCR                | ✅           |
+| 345 | Surya OCR                      | 🇮🇳 India   | 2024 | Multilingual OCR              | OCR                | ✅           |
+| 346 | DocTR                          | 🇫🇷 France  | 2021 | Document OCR                  | OCR                | ✅           |
+| 347 | Camelot                        | 🇮🇳 India   | 2018 | Extract Tables from PDFs      | PDF Processing     | ✅           |
+| 348 | Tabula-py                      | 🇯🇵 Japan   | 2018 | PDF Table Extraction          | PDF Processing     | ✅           |
+| 349 | OCRmyPDF                       | 🇩🇪 Germany | 2016 | Searchable PDF Creation       | OCR                | ✅           |
+| 350 | Marker                         | 🌍 Global    | 2024 | PDF to Markdown Conversion    | Document AI        | ✅           |
+| No. | Framework / Library / Platform | Country          | Year | Primary Real-Time Usage                    | Category            | Open Source |
+| --: | ------------------------------ | ---------------- | ---- | ------------------------------------------ | ------------------- | ----------- |
+| 351 | Haystack Integrations          | 🇩🇪 Germany     | 2024 | Connect Haystack with LLMs & Databases     | RAG                 | ✅           |
+| 352 | Chonkie                        | 🇦🇺 Australia   | 2024 | Semantic Text Chunking                     | RAG                 | ✅           |
+| 353 | Semantic Router                | 🇺🇸 USA         | 2024 | Intelligent Request Routing                | LLM Routing         | ✅           |
+| 354 | RouteLLM                       | 🇺🇸 USA         | 2024 | Multi-LLM Model Routing                    | LLM Gateway         | ✅           |
+| 355 | Semantic Kernel Plugins        | 🇺🇸 USA         | 2024 | AI Skills & Plugins                        | AI Framework        | ✅           |
+| 356 | AgentOps                       | 🇺🇸 USA         | 2024 | AI Agent Monitoring                        | Agent Observability | ✅           |
+| 357 | Braintrust                     | 🇺🇸 USA         | 2024 | LLM Evaluation Platform                    | LLM Evaluation      | ✅           |
+| 358 | OpenPipe                       | 🇺🇸 USA         | 2024 | Fine-Tuning APIs                           | LLM Training        | ✅           |
+| 359 | Marvin                         | 🇺🇸 USA         | 2023 | AI Data Processing                         | AI Framework        | ✅           |
+| 360 | BAML                           | 🇺🇸 USA         | 2024 | Structured LLM Programming                 | LLM Development     | ✅           |
+| 361 | DSPy Assertions                | 🇺🇸 USA         | 2024 | Reliable Prompt Programming                | Prompt Engineering  | ✅           |
+| 362 | GraphRAG                       | 🇺🇸 USA         | 2024 | Graph-Based RAG                            | RAG Framework       | ✅           |
+| 363 | LightRAG                       | 🇨🇳 China       | 2024 | Lightweight Retrieval-Augmented Generation | RAG Framework       | ✅           |
+| 364 | FastRAG                        | 🇩🇪 Germany     | 2024 | High-Speed Retrieval                       | RAG Framework       | ✅           |
+| 365 | NanoGraphRAG                   | 🌍 Global        | 2024 | Lightweight Graph RAG                      | RAG Framework       | ✅           |
+| 366 | Raptor                         | 🇺🇸 USA         | 2024 | Hierarchical Retrieval                     | RAG                 | ✅           |
+| 367 | RAPTOR-RAG                     | 🇺🇸 USA         | 2024 | Tree-Based Document Retrieval              | RAG                 | ✅           |
+| 368 | MemoRAG                        | 🇨🇳 China       | 2024 | Memory-Augmented Retrieval                 | RAG                 | ✅           |
+| 369 | HippoRAG                       | 🇺🇸 USA         | 2024 | Knowledge Graph Retrieval                  | RAG                 | ✅           |
+| 370 | LazyLLM                        | 🇨🇳 China       | 2024 | Agent & Workflow Framework                 | AI Agents           | ✅           |
+| 371 | AutoRAG                        | 🇰🇷 South Korea | 2024 | Automatic RAG Pipeline                     | RAG                 | ✅           |
+| 372 | LightEval                      | 🇫🇷 France      | 2024 | LLM Benchmarking                           | Evaluation          | ✅           |
+| 373 | EvalScope                      | 🇨🇳 China       | 2024 | LLM Evaluation                             | Evaluation          | ✅           |
+| 374 | DeepEval                       | 🇺🇸 USA         | 2024 | LLM Testing Framework                      | Evaluation          | ✅           |
+| 375 | OpenAI Evals                   | 🇺🇸 USA         | 2023 | LLM Benchmarking                           | Evaluation          | ✅           |
+| 376 | Inspector                      | 🇺🇸 USA         | 2024 | AI Testing Framework                       | AI Testing          | ✅           |
+| 377 | PromptBench                    | 🇨🇳 China       | 2024 | Prompt Evaluation                          | Prompt Engineering  | ✅           |
+| 378 | PromptLayer OSS                | 🇺🇸 USA         | 2024 | Prompt Monitoring                          | Prompt Engineering  | ✅           |
+| 379 | OpenPromptX                    | 🇨🇳 China       | 2024 | Prompt Optimization                        | Prompt Engineering  | ✅           |
+| 380 | Promptim                       | 🇺🇸 USA         | 2024 | Prompt Improvement                         | Prompt Engineering  | ✅           |
+| 381 | TinyAgents                     | 🇺🇸 USA         | 2024 | Lightweight AI Agents                      | AI Agents           | ✅           |
+| 382 | AgentVerse                     | 🇨🇳 China       | 2023 | Multi-Agent Simulation                     | Multi-Agent         | ✅           |
+| 383 | AIWaves Agents                 | 🇨🇳 China       | 2024 | Autonomous AI Agents                       | AI Agents           | ✅           |
+| 384 | OpenBMB Agent                  | 🇨🇳 China       | 2024 | Intelligent Agent Framework                | AI Agents           | ✅           |
+| 385 | AgentBench                     | 🇨🇳 China       | 2023 | Agent Benchmarking                         | Evaluation          | ✅           |
+| 386 | AutoAgents                     | 🇨🇳 China       | 2024 | Autonomous Task Execution                  | AI Agents           | ✅           |
+| 387 | MetaAgent                      | 🇨🇳 China       | 2024 | Multi-Agent Coordination                   | Multi-Agent         | ✅           |
+| 388 | TaskWeaver                     | 🇺🇸 USA         | 2024 | Code-Centric AI Agent                      | AI Agents           | ✅           |
+| 389 | MemGPT                         | 🇺🇸 USA         | 2023 | Long-Term AI Memory                        | AI Memory           | ✅           |
+| 390 | Zep                            | 🇺🇸 USA         | 2023 | AI Memory Store                            | AI Memory           | ✅           |
+| 391 | Letta                          | 🇺🇸 USA         | 2024 | Persistent AI Memory                       | AI Memory           | ✅           |
+| 392 | MemoryScope                    | 🇨🇳 China       | 2024 | Memory Management                          | AI Memory           | ✅           |
+| 393 | Mem0                           | 🇮🇳 India       | 2024 | Long-Term AI Memory                        | AI Memory           | ✅           |
+| 394 | AIOS                           | 🇨🇳 China       | 2024 | AI Operating System                        | AI Platform         | ✅           |
+| 395 | OpenAgents                     | 🇨🇳 China       | 2024 | Multi-Agent Platform                       | AI Platform         | ✅           |
+| 396 | AgentLite                      | 🇨🇳 China       | 2024 | Lightweight Agent Framework                | AI Agents           | ✅           |
+| 397 | OmniParser                     | 🇺🇸 USA         | 2024 | UI Understanding                           | Vision AI           | ✅           |
+| 398 | UI-TARS                        | 🇨🇳 China       | 2024 | GUI Automation                             | Computer Vision     | ✅           |
+| 399 | ShowUI                         | 🇨🇳 China       | 2024 | Vision-Language UI Control                 | Vision AI           | ✅           |
+| 400 | OmniTool                       | 🇨🇳 China       | 2024 | Universal AI Agent Toolkit                 | AI Agents           | ✅           |
+| No. | Framework / Library / Platform | Country      | Year | Primary Real-Time Usage          | Category      | Open Source |
+| --: | ------------------------------ | ------------ | ---- | -------------------------------- | ------------- | ----------- |
+| 401 | VisionAgent                    | 🇺🇸 USA     | 2024 | Vision-Based AI Agent            | AI Agents     | ✅           |
+| 402 | ScreenAI                       | 🇺🇸 USA     | 2024 | Screen Understanding             | Vision AI     | ✅           |
+| 403 | BrowserGym                     | 🇫🇷 France  | 2024 | Browser Agent Benchmark          | AI Agents     | ✅           |
+| 404 | WebArena                       | 🇺🇸 USA     | 2023 | Web Agent Evaluation             | AI Benchmark  | ✅           |
+| 405 | MiniWoB++                      | 🇺🇸 USA     | 2018 | Web Automation Research          | AI Benchmark  | ✅           |
+| 406 | OSWorld                        | 🇺🇸 USA     | 2024 | Operating System Agent Benchmark | AI Benchmark  | ✅           |
+| 407 | AndroidWorld                   | 🇺🇸 USA     | 2024 | Android Agent Benchmark          | Mobile AI     | ✅           |
+| 408 | MobileAgent                    | 🇨🇳 China   | 2024 | Mobile Phone AI Agent            | AI Agents     | ✅           |
+| 409 | AppAgent                       | 🇨🇳 China   | 2024 | Mobile App Automation            | AI Agents     | ✅           |
+| 410 | AutoDroid                      | 🇨🇳 China   | 2024 | Android Automation               | Mobile AI     | ✅           |
+| 411 | AutoWebGLM                     | 🇨🇳 China   | 2024 | Web Navigation Agent             | AI Agents     | ✅           |
+| 412 | Voyager                        | 🇺🇸 USA     | 2023 | Autonomous Minecraft Agent       | AI Agents     | ✅           |
+| 413 | MineDojo                       | 🇺🇸 USA     | 2022 | Embodied AI Environment          | AI Research   | ✅           |
+| 414 | MineRL                         | 🇺🇸 USA     | 2019 | Reinforcement Learning Benchmark | RL            | ✅           |
+| 415 | Habitat 2.0                    | 🇺🇸 USA     | 2023 | Embodied AI Simulation           | Robotics AI   | ✅           |
+| 416 | RoboCasa                       | 🇺🇸 USA     | 2024 | Household Robot Learning         | Robotics AI   | ✅           |
+| 417 | RoboMimic                      | 🇺🇸 USA     | 2021 | Robot Imitation Learning         | Robotics      | ✅           |
+| 418 | Isaac Orbit                    | 🇺🇸 USA     | 2023 | Robot Simulation                 | Robotics      | ✅           |
+| 419 | ManiSkill2                     | 🇨🇳 China   | 2023 | Robotic Manipulation             | Robotics AI   | ✅           |
+| 420 | OpenCabinet                    | 🇺🇸 USA     | 2023 | Household Robot Benchmark        | Robotics      | ✅           |
+| 421 | RLBench                        | 🇬🇧 UK      | 2019 | Robotic Manipulation Benchmark   | Robotics      | ✅           |
+| 422 | RoboSuite                      | 🇺🇸 USA     | 2020 | Robot Learning                   | Robotics      | ✅           |
+| 423 | LeRobot                        | 🇫🇷 France  | 2024 | Open Robotics Foundation Models  | Robotics AI   | ✅           |
+| 424 | OpenPI                         | 🇺🇸 USA     | 2024 | Physical Intelligence Models     | Robotics AI   | ✅           |
+| 425 | OpenVLA                        | 🇺🇸 USA     | 2024 | Vision-Language-Action Models    | Robotics AI   | ✅           |
+| 426 | Pi0                            | 🇺🇸 USA     | 2024 | Robot Foundation Model           | Robotics AI   | ✅           |
+| 427 | RoboAgent                      | 🇨🇳 China   | 2024 | Autonomous Robot Agents          | AI Agents     | ✅           |
+| 428 | RobotGPT                       | 🇨🇳 China   | 2024 | LLM for Robotics                 | Robotics AI   | ✅           |
+| 429 | OpenRobotLab                   | 🇨🇳 China   | 2024 | Robotics Research Platform       | Robotics      | ✅           |
+| 430 | Rofunc                         | 🇨🇳 China   | 2023 | Robot Learning Framework         | Robotics      | ✅           |
+| 431 | OpenBioML                      | 🇺🇸 USA     | 2024 | AI for Biology                   | BioAI         | ✅           |
+| 432 | TorchDrug                      | 🇨🇳 China   | 2021 | Drug Discovery                   | BioAI         | ✅           |
+| 433 | DeepChem                       | 🇺🇸 USA     | 2016 | Drug Discovery & Chemistry       | BioAI         | ✅           |
+| 434 | OpenFold                       | 🇺🇸 USA     | 2022 | Protein Folding                  | BioAI         | ✅           |
+| 435 | ESM                            | 🇺🇸 USA     | 2022 | Protein Language Models          | BioAI         | ✅           |
+| 436 | BioNeMo                        | 🇺🇸 USA     | 2023 | Biomedical Foundation Models     | BioAI         | ✅           |
+| 437 | scvi-tools                     | 🇺🇸 USA     | 2020 | Single-Cell Genomics             | BioAI         | ✅           |
+| 438 | Cellpose                       | 🇺🇸 USA     | 2021 | Cell Segmentation                | Medical AI    | ✅           |
+| 439 | MONAI Label                    | 🇺🇸 USA     | 2021 | Medical Image Annotation         | Medical AI    | ✅           |
+| 440 | nnU-Net                        | 🇩🇪 Germany | 2019 | Medical Image Segmentation       | Medical AI    | ✅           |
+| 441 | TorchIO                        | 🇪🇸 Spain   | 2019 | Medical Imaging                  | Medical AI    | ✅           |
+| 442 | MedCAT                         | 🇬🇧 UK      | 2020 | Clinical NLP                     | Healthcare AI | ✅           |
+| 443 | MedSpaCy                       | 🇺🇸 USA     | 2019 | Clinical NLP Pipeline            | Healthcare AI | ✅           |
+| 444 | ClinicalBERT Toolkit           | 🇺🇸 USA     | 2020 | Medical Language Models          | Healthcare AI | ✅           |
+| 445 | OpenClinicalAI                 | 🌍 Global    | 2024 | Clinical Decision Support        | Healthcare AI | ✅           |
+| 446 | HistomicsTK                    | 🇺🇸 USA     | 2018 | Digital Pathology                | Medical AI    | ✅           |
+| 447 | Slideflow                      | 🇺🇸 USA     | 2021 | Whole Slide Image AI             | Medical AI    | ✅           |
+| 448 | MONAI Deploy                   | 🇺🇸 USA     | 2022 | Medical AI Deployment            | Healthcare AI | ✅           |
+| 449 | MedPerf                        | 🇺🇸 USA     | 2022 | Medical AI Benchmarking          | Healthcare AI | ✅           |
+| 450 | OpenMMLab Medical              | 🇨🇳 China   | 2024 | Medical Vision AI                | Medical AI    | ✅           |
+| No. | Framework / Library / Platform | Country     | Year | Primary Real-Time Usage               | Category          | Open Source |
+| --: | ------------------------------ | ----------- | ---- | ------------------------------------- | ----------------- | ----------- |
+| 451 | OpenMMLab 2.0                  | 🇨🇳 China  | 2023 | Unified AI Vision Platform            | Computer Vision   | ✅           |
+| 452 | MMPreTrain                     | 🇨🇳 China  | 2023 | Vision Foundation Models              | Computer Vision   | ✅           |
+| 453 | VisionLLM                      | 🇨🇳 China  | 2024 | Vision-Language Models                | Multimodal AI     | ✅           |
+| 454 | LLaVA                          | 🇺🇸 USA    | 2023 | Vision-Language Assistant             | Multimodal AI     | ✅           |
+| 455 | LLaVA-NeXT                     | 🇺🇸 USA    | 2024 | Advanced Vision-Language Models       | Multimodal AI     | ✅           |
+| 456 | MiniGPT-4                      | 🇺🇸 USA    | 2023 | Image Understanding                   | Multimodal AI     | ✅           |
+| 457 | InstructBLIP                   | 🇺🇸 USA    | 2023 | Vision-Language Instruction Following | Multimodal AI     | ✅           |
+| 458 | BLIP-2                         | 🇺🇸 USA    | 2023 | Image Captioning & VQA                | Multimodal AI     | ✅           |
+| 459 | Qwen-VL                        | 🇨🇳 China  | 2023 | Vision-Language Model                 | Multimodal AI     | ✅           |
+| 460 | Qwen2-VL                       | 🇨🇳 China  | 2024 | Multimodal Understanding              | Multimodal AI     | ✅           |
+| 461 | CogVLM                         | 🇨🇳 China  | 2023 | Visual Question Answering             | Multimodal AI     | ✅           |
+| 462 | InternVL                       | 🇨🇳 China  | 2024 | Large Vision-Language Models          | Multimodal AI     | ✅           |
+| 463 | DeepSeek-VL                    | 🇨🇳 China  | 2024 | Multimodal LLM                        | Multimodal AI     | ✅           |
+| 464 | Molmo                          | 🇺🇸 USA    | 2024 | Open Vision-Language Model            | Multimodal AI     | ✅           |
+| 465 | Florence-2                     | 🇺🇸 USA    | 2024 | Universal Vision Foundation Model     | Vision AI         | ✅           |
+| 466 | SAM2                           | 🇺🇸 USA    | 2024 | Image & Video Segmentation            | Computer Vision   | ✅           |
+| 467 | EfficientSAM                   | 🇺🇸 USA    | 2024 | Efficient Segmentation                | Computer Vision   | ✅           |
+| 468 | Depth Anything                 | 🇨🇳 China  | 2024 | Monocular Depth Estimation            | Computer Vision   | ✅           |
+| 469 | Depth Anything V2              | 🇨🇳 China  | 2024 | Advanced Depth Prediction             | Computer Vision   | ✅           |
+| 470 | DINOv2                         | 🇺🇸 USA    | 2023 | Vision Foundation Model               | Computer Vision   | ✅           |
+| 471 | YOLO-World                     | 🇨🇳 China  | 2024 | Open-Vocabulary Detection             | Computer Vision   | ✅           |
+| 472 | YOLOE                          | 🇨🇳 China  | 2024 | Enhanced Object Detection             | Computer Vision   | ✅           |
+| 473 | RT-DETR                        | 🇨🇳 China  | 2023 | Real-Time Object Detection            | Computer Vision   | ✅           |
+| 474 | Grounding DINO 1.5             | 🇨🇳 China  | 2024 | Open-World Detection                  | Computer Vision   | ✅           |
+| 475 | Florence Toolkit               | 🇺🇸 USA    | 2024 | Vision AI Utilities                   | Vision AI         | ✅           |
+| 476 | OpenCLIP                       | 🇺🇸 USA    | 2022 | Contrastive Vision-Language Models    | Multimodal AI     | ✅           |
+| 477 | EVA-CLIP                       | 🇨🇳 China  | 2023 | Vision-Language Embeddings            | Multimodal AI     | ✅           |
+| 478 | SigLIP                         | 🇺🇸 USA    | 2023 | Vision-Language Representation        | Multimodal AI     | ✅           |
+| 479 | CLIP Benchmark                 | 🇫🇷 France | 2023 | Vision Model Evaluation               | AI Benchmark      | ✅           |
+| 480 | Visual Genome Toolkit          | 🇺🇸 USA    | 2017 | Vision Dataset Processing             | Computer Vision   | ✅           |
+| 481 | OpenCLIP Trainer               | 🇺🇸 USA    | 2024 | CLIP Model Training                   | Multimodal AI     | ✅           |
+| 482 | VideoLLaMA                     | 🇨🇳 China  | 2023 | Video Understanding                   | Video AI          | ✅           |
+| 483 | VideoLLaMA2                    | 🇨🇳 China  | 2024 | Video-Language Models                 | Video AI          | ✅           |
+| 484 | VideoChat                      | 🇨🇳 China  | 2023 | Video Conversation AI                 | Video AI          | ✅           |
+| 485 | VideoChat2                     | 🇨🇳 China  | 2024 | Advanced Video Understanding          | Video AI          | ✅           |
+| 486 | InternVideo                    | 🇨🇳 China  | 2022 | Video Foundation Models               | Video AI          | ✅           |
+| 487 | Open-Sora                      | 🇨🇳 China  | 2024 | Text-to-Video Generation              | Generative AI     | ✅           |
+| 488 | Open-Sora Plan                 | 🇨🇳 China  | 2024 | Open Video Generation                 | Generative AI     | ✅           |
+| 489 | Stable Video Diffusion         | 🇬🇧 UK     | 2023 | AI Video Generation                   | Generative AI     | ✅           |
+| 490 | AnimateDiff                    | 🌍 Global   | 2023 | Animated AI Videos                    | Generative AI     | ✅           |
+| 491 | LivePortrait                   | 🇨🇳 China  | 2024 | Portrait Animation                    | Generative AI     | ✅           |
+| 492 | MuseTalk                       | 🇨🇳 China  | 2024 | Lip Synchronization                   | Speech & Video AI | ✅           |
+| 493 | SadTalker                      | 🇨🇳 China  | 2023 | Talking Face Generation               | Generative AI     | ✅           |
+| 494 | Wav2Lip                        | 🇮🇳 India  | 2020 | Lip Sync Generation                   | Speech AI         | ✅           |
+| 495 | FaceFusion                     | 🌍 Global   | 2023 | Face Swapping Research                | Generative AI     | ✅           |
+| 496 | OpenAvatarChat                 | 🇨🇳 China  | 2024 | Digital Human Platform                | Digital Humans    | ✅           |
+| 497 | EchoMimic                      | 🇨🇳 China  | 2024 | Audio-Driven Avatar Animation         | Digital Humans    | ✅           |
+| 498 | Hallo                          | 🇨🇳 China  | 2024 | Talking Avatar Generation             | Digital Humans    | ✅           |
+| 499 | EMO                            | 🇨🇳 China  | 2024 | Expressive Talking Portraits          | Digital Humans    | ✅           |
+| 500 | DreamTalk                      | 🇨🇳 China  | 2024 | AI Digital Human Generation           | Digital Humans    | ✅           |
