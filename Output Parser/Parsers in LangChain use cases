@@ -1,0 +1,16 @@
+| Parser                         | Output         | Best Use Case           |
+| ------------------------------ | -------------- | ----------------------- |
+| StrOutputParser                | Text           | Chatbot replies         |
+| JsonOutputParser               | JSON           | APIs, Web Apps          |
+| PydanticOutputParser           | Python Object  | Data validation         |
+| CommaSeparatedListOutputParser | List           | Shopping lists          |
+| MarkdownListOutputParser       | Bullet List    | Documentation           |
+| NumberedListOutputParser       | Numbered List  | Rankings                |
+| XMLOutputParser                | XML            | XML APIs                |
+| YamlOutputParser               | YAML           | DevOps, Kubernetes      |
+| DatetimeOutputParser           | Datetime       | Scheduling              |
+| EnumOutputParser               | Enum           | Classification          |
+| RegexParser                    | Dictionary     | Text extraction         |
+| RetryOutputParser              | Correct Output | Robust workflows        |
+| OutputFixingParser             | Fixed Output   | Malformed LLM responses |
+
