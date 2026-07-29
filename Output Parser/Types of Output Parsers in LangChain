@@ -1,0 +1,15 @@
+| Output Parser                  | Purpose                  | Output Type       | Real-Time Example       |
+| ------------------------------ | ------------------------ | ----------------- | ----------------------- |
+| StrOutputParser                | Returns plain text       | String            | Chatbot answer          |
+| JsonOutputParser               | Returns JSON             | Dictionary        | API response            |
+| PydanticOutputParser           | Returns validated object | Python Class      | Student details         |
+| CommaSeparatedListOutputParser | Returns list             | Python List       | Shopping items          |
+| MarkdownListOutputParser       | Returns markdown list    | List              | Bullet points           |
+| NumberedListOutputParser       | Returns numbered list    | List              | Top 10 cities           |
+| XMLOutputParser                | Returns XML              | XML               | Configuration file      |
+| YamlOutputParser               | Returns YAML             | YAML              | DevOps configuration    |
+| DatetimeOutputParser           | Parses date/time         | Datetime          | Meeting scheduler       |
+| EnumOutputParser               | Restricts output choices | Enum              | Sentiment Analysis      |
+| RegexParser                    | Uses regex patterns      | Dictionary        | Invoice extraction      |
+| RetryOutputParser              | Retries invalid output   | Corrected Output  | JSON fixing             |
+| OutputFixingParser             | Repairs malformed output | Structured Output | Invalid JSON correction |
