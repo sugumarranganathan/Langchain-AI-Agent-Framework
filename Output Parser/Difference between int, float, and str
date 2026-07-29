@@ -1,0 +1,86 @@
+Difference between int, float, and str
+
+| Data Type | Meaning        | Example                 |
+| --------- | -------------- | ----------------------- |
+| `int`     | Whole number   | `100`, `25`, `-5`       |
+| `float`   | Decimal number | `99.99`, `10.5`, `3.14` |
+| `str`     | Text           | `"Laptop"`, `"Apple"`   |
+
+=======
+
+Example:
+
+price = 599.99      # float
+quantity = 2        # int
+product = "Mouse"   # str
+
+=====
+
+Why use float for price?
+
+Prices often include decimal values.
+
+price = 49.99
+discount = 5.50
+
+final_price = price - discount
+
+print(final_price)
+
+Output:
+
+44.49
+
+======
+
+unction Example
+def calculate_total(price: float, quantity: int):
+    return price * quantity
+
+total = calculate_total(99.99, 3)
+
+print(total)
+
+Output:
+
+299.97
+
+Here:
+
+price: float → price should be a decimal number.
+quantity: int → quantity should be a whole number.
+
+===
+
+In Pydantic (LangChain)
+from pydantic import BaseModel
+
+class Product(BaseModel):
+    name: str
+    price: float
+
+Example:
+
+product = Product(
+    name="Keyboard",
+    price=1499.50
+)
+
+print(product)
+
+Output:
+
+name='Keyboard' price=1499.5
+
+
+===
+
+Summary
+------
+
+| Syntax            | Meaning                            |
+| ----------------- | ---------------------------------- |
+| `price: float`    | `price` should be a decimal number |
+| `age: int`        | `age` should be a whole number     |
+| `name: str`       | `name` should be text              |
+| `is_active: bool` | `True` or `False`                  |
