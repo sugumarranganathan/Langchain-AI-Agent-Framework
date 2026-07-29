@@ -1,0 +1,41 @@
+Output Parser in LangChain
+
+An Output Parser in LangChain converts the raw response from an LLM into a structured format such as JSON, Python objects, lists, or custom classes. It ensures the model's output follows the format your application expects.
+
+Why Output Parser?
+
+Without an output parser:
+
+User → LLM → "The answer is Chennai. Population is about 11 million."
+
+The output is just plain text.
+
+With an output parser:
+
+User → LLM → Output Parser → {
+    "city": "Chennai",
+    "population": "11 million"
+}
+
+This makes it easy for Python programs to use the response.
+
+Working Flow
+User Question
+      │
+      ▼
+Prompt Template
+      │
+      ▼
+Large Language Model (LLM)
+      │
+      ▼
+Output Parser
+      │
+      ▼
+Structured Output
+(JSON / List / Dictionary / Pydantic Object)
+Types of Output Parsers in LangChain
+
+  ============
+
+  
