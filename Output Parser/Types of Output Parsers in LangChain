@@ -13,3 +13,281 @@
 | RegexParser                    | Uses regex patterns      | Dictionary        | Invoice extraction      |
 | RetryOutputParser              | Retries invalid output   | Corrected Output  | JSON fixing             |
 | OutputFixingParser             | Repairs malformed output | Structured Output | Invalid JSON correction |
+
+
+=========
+
+1. StrOutputParser
+Use
+
+Returns normal text.
+
+Example
+from langchain_core.output_parsers import StrOutputParser
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+
+parser = StrOutputParser()
+
+chain = llm | parser
+
+result = chain.invoke("What is AI?")
+
+print(result)
+
+Output
+
+Artificial Intelligence is the simulation of human intelligence by machines.
+2. JsonOutputParser
+Use
+
+Returns JSON.
+
+from langchain_core.output_parsers import JsonOutputParser
+
+parser = JsonOutputParser()
+
+prompt = """
+Give student details in JSON format.
+
+{
+"name":"",
+"age":"",
+"city":""
+}
+"""
+
+chain = llm | parser
+
+result = chain.invoke(prompt)
+
+print(result)
+
+Output
+
+{
+'name':'Rahul',
+'age':22,
+'city':'Chennai'
+}
+
+=======
+
+3. PydanticOutputParser
+Use
+
+Creates validated Python objects.
+
+from pydantic import BaseModel
+from langchain_core.output_parsers import PydanticOutputParser
+
+class Student(BaseModel):
+    name:str
+    age:int
+    city:str
+
+parser = PydanticOutputParser(pydantic_object=Student)
+
+Output
+
+Student(
+name='Rahul',
+age=22,
+city='Chennai'
+)
+
+=========
+
+4. CommaSeparatedListOutputParser
+Use
+
+Converts comma-separated text into a Python list.
+
+from langchain.output_parsers import CommaSeparatedListOutputParser
+
+parser = CommaSeparatedListOutputParser()
+
+result = parser.parse("Apple,Banana,Mango")
+
+print(result)
+
+Output
+
+['Apple','Banana','Mango']
+
+======
+
+5. MarkdownListOutputParser
+Use
+
+Reads markdown bullet lists.
+
+Input
+
+- Apple
+- Banana
+- Mango
+
+Output
+
+[
+'Apple',
+'Banana',
+'Mango'
+]
+
+========
+
+6. NumberedListOutputParser
+Use
+
+Reads numbered lists.
+
+Input
+
+1. Python
+2. Java
+3. C++
+
+Output
+
+[
+'Python',
+'Java',
+'C++'
+]
+
+======
+
+7. XMLOutputParser
+Use
+
+Returns XML.
+
+Output
+
+<student>
+   <name>Rahul</name>
+   <age>22</age>
+</student>
+
+=====
+
+8. YamlOutputParser
+Use
+
+Returns YAML.
+
+Output
+
+name: Rahul
+age: 22
+city: Chennai
+
+=======
+
+9. DatetimeOutputParser
+Use
+
+Converts LLM output into Python datetime.
+
+Example
+
+Tomorrow at 10 AM
+
+Output
+
+datetime.datetime(...)
+
+Useful for:
+
+Calendar apps
+Meeting schedulers
+Reminder systems
+
+========
+
+10. EnumOutputParser
+Use
+
+Limits answers to predefined values.
+
+Example
+
+Positive
+Negative
+Neutral
+
+Useful for:
+
+Sentiment Analysis
+Email Classification
+Ticket Priority
+
+======
+
+11. RegexParser
+Use
+
+Extracts structured data using regular expressions.
+
+Example
+
+Input
+
+Invoice Number: INV12345
+Amount: ₹5000
+
+Output
+
+{
+"invoice":"INV12345",
+"amount":"5000"
+}
+
+=======
+
+2. RetryOutputParser
+Use
+
+If the LLM returns invalid output, it asks the model to regenerate it.
+
+Flow
+
+LLM
+ ↓
+Invalid JSON
+ ↓
+Retry Parser
+ ↓
+Correct JSON
+
+Useful for:
+
+APIs
+JSON generation
+Automation
+13. OutputFixingParser
+Use
+
+Automatically fixes malformed output without asking the model to regenerate everything.
+
+Example
+
+Invalid Output
+
+{
+name:"Rahul"
+age:22
+}
+
+Fixed Output
+
+{
+"name":"Rahul",
+"age":22
+}
+
+======
+
