@@ -1,0 +1,105 @@
+| Chunking Strategy         | Description                                                             | Best Use Case            | Advantages                    | Disadvantages                         |
+| ------------------------- | ----------------------------------------------------------------------- | ------------------------ | ----------------------------- | ------------------------------------- |
+| Fixed Size Chunking       | Split text into equal-sized chunks (e.g., 500 characters or 300 tokens) | Small documents          | Simple and fast               | May split sentences or ideas          |
+| Recursive Chunking        | Split by paragraphs → sentences → words if needed                       | General RAG applications | Preserves context better      | Slightly slower                       |
+| Sentence Chunking         | One or more complete sentences per chunk                                | FAQ, articles            | Natural language boundaries   | Chunk sizes vary                      |
+| Paragraph Chunking        | Each paragraph becomes one chunk                                        | Books, reports           | Maintains logical sections    | Some paragraphs are too large         |
+| Semantic Chunking         | Split based on meaning using embeddings                                 | High-quality RAG         | Better retrieval accuracy     | Computationally expensive             |
+| Token-Based Chunking      | Split by token count (e.g., 512 tokens)                                 | LLM-based applications   | Fits model context limits     | Ignores document structure            |
+| Sliding Window Chunking   | Overlapping chunks (e.g., 500 tokens with 100-token overlap)            | Question answering       | Reduces information loss      | More storage and duplicate embeddings |
+| Document Section Chunking | Chunk by headings/subheadings                                           | Manuals, technical docs  | Keeps topic consistency       | Requires structured documents         |
+| Markdown Chunking         | Split by Markdown headers                                               | README, documentation    | Preserves hierarchy           | Only works for Markdown               |
+| HTML Chunking             | Split by HTML tags                                                      | Websites                 | Maintains page structure      | Requires HTML parsing                 |
+| Code Chunking             | Split by functions, classes, methods                                    | Source code RAG          | Keeps code logically grouped  | Language-specific parsing needed      |
+| Table Chunking            | Split tables row-wise or section-wise                                   | CSV, Excel, databases    | Preserves tabular information | Large tables require careful handling |
+
+
+==========
+
+Most Popular Strategy for LangGraph RAG
+PDF
+   │
+   ▼
+Document Loader
+   │
+   ▼
+RecursiveCharacterTextSplitter
+   │
+   ▼
+Chunks
+   │
+   ▼
+Embedding Model
+   │
+   ▼
+Vector Database (FAISS/Chroma/Pinecone)
+   │
+   ▼
+Retriever
+   │
+   ▼
+LangGraph Workflow
+   │
+   ▼
+LLM
+
+
+=============
+
+Common Chunk Sizes
+
+| Document Type      |                    Chunk Size |     Overlap |
+| ------------------ | ----------------------------: | ----------: |
+| FAQs               |                200–300 tokens |       20–50 |
+| Blogs              |                400–600 tokens |      50–100 |
+| Research Papers    |               600–1000 tokens |     100–200 |
+| Books              |               800–1200 tokens |     150–250 |
+| Source Code        | 100–300 lines or one function | 20–50 lines |
+| Product Catalogues |                300–500 tokens |      50–100 |
+
+========
+
+LangChain Text Splitters Commonly Used with LangGraph
+
+| Text Splitter                    | Strategy          | Recommended For     |
+| -------------------------------- | ----------------- | ------------------- |
+| `CharacterTextSplitter`          | Fixed size        | Small documents     |
+| `RecursiveCharacterTextSplitter` | Recursive         | Most RAG projects ⭐ |
+| `TokenTextSplitter`              | Token-based       | Token-aware models  |
+| `MarkdownHeaderTextSplitter`     | Markdown sections | Documentation       |
+| `HTMLHeaderTextSplitter`         | HTML sections     | Websites            |
+| `PythonCodeTextSplitter`         | Code-aware        | Python repositories |
+| `LatexTextSplitter`              | LaTeX sections    | Academic papers     |
+
+
+====
+
+Which Strategy Should You Use?
+
+| Project Type               | Recommended Chunking          |
+| -------------------------- | ----------------------------- |
+| Bus Ticket Booking Chatbot | Recursive Chunking            |
+| Restaurant AI Chatbot      | Recursive + Sliding Window    |
+| PDF Q&A System             | Recursive Chunking            |
+| Legal Document Assistant   | Semantic Chunking             |
+| Medical RAG                | Semantic + Sliding Window     |
+| Coding Assistant           | Code Chunking                 |
+| Company Knowledge Base     | Recursive + Markdown Chunking |
+
+=======
+
+Recommendation for Your Bus Ticket Booking Chatbot
+
+Since you're building a multi-agent bus ticket booking chatbot with LangGraph and RAG, a good configuration is:
+
+Chunking: RecursiveCharacterTextSplitter
+Chunk size: 500–700 tokens
+Overlap: 80–100 tokens
+Embedding model: all-MiniLM-L6-v2 (or another strong embedding model)
+Vector database: FAISS
+Orchestration: LangGraph
+
+This combination provides a good balance of retrieval accuracy, context preservation, and performance for route information, FAQs, booking policies, and schedules.
+
+=======
+
