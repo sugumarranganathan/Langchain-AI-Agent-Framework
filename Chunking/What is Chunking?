@@ -1,0 +1,184 @@
+What is Chunking?
+
+Chunking is the process of splitting a large document into smaller, meaningful pieces (called chunks) before storing them in a vector database for Retrieval-Augmented Generation (RAG).
+
+Large Language Models (LLMs) cannot efficiently process very large documents at once due to context window limits. Instead of searching an entire document, the system searches the relevant chunks.
+
+Example
+
+Suppose you have a PDF with 1,000 pages about bus services.
+
+Original Document
+──────────────────────────────────────────
+Page 1
+Page 2
+Page 3
+...
+Page 1000
+
+Instead of storing it as one huge document, chunking divides it into smaller sections.
+
+Chunk 1  → Pages 1–3
+Chunk 2  → Pages 4–6
+Chunk 3  → Pages 7–9
+...
+Chunk 350
+
+Each chunk is then converted into an embedding and stored in a vector database.
+
+Why Do We Need Chunking?
+
+Imagine asking:
+
+"What is the luggage allowance for sleeper buses?"
+
+Without chunking:
+
+Question
+    │
+    ▼
+Search entire 1000-page PDF ❌
+
+This is slow and inefficient.
+
+With chunking:
+
+Question
+    │
+    ▼
+Find the most relevant chunks
+    │
+    ▼
+Only send those chunks to the LLM
+    │
+    ▼
+Answer generated quickly ✅
+Real-World Example
+Restaurant Menu
+100-page menu book
+
+Instead of one large document:
+
+Chunk 1
+Starters
+
+Chunk 2
+Soups
+
+Chunk 3
+Main Course
+
+Chunk 4
+Desserts
+
+Chunk 5
+Beverages
+
+If a customer asks:
+
+"Do you have mushroom soup?"
+
+The retriever fetches only the Soups chunk instead of the entire menu.
+
+Another Example
+
+Consider this text:
+
+Chennai to Madurai bus leaves at 9 PM.
+
+The ticket price is ₹850.
+
+Passengers should arrive 30 minutes before departure.
+
+Each passenger may carry 20 kg of luggage.
+
+Refunds are allowed up to 24 hours before departure.
+
+Using fixed-size chunking:
+
+Chunk 1
+------------------------
+Chennai to Madurai bus
+leaves at 9 PM.
+
+The ticket price
+is ₹850.
+Chunk 2
+------------------------
+Passengers should
+arrive 30 minutes
+before departure.
+
+Each passenger may
+carry 20 kg luggage.
+Chunk 3
+------------------------
+Refunds are allowed
+up to 24 hours
+before departure.
+Where Chunking Fits in a RAG Pipeline
+PDF
+ │
+ ▼
+Document Loader
+ │
+ ▼
+Chunking
+ │
+ ▼
+Embeddings
+ │
+ ▼
+Vector Database
+ │
+ ▼
+Retriever
+ │
+ ▼
+LLM
+ │
+ ▼
+Answer
+
+======
+
+Benefits of Chunking
+
+| Benefit              | Explanation                                                            |
+| -------------------- | ---------------------------------------------------------------------- |
+| Faster retrieval     | Searches only small chunks instead of the whole document.              |
+| Better accuracy      | Retrieves information that is directly related to the user's question. |
+| Lower token usage    | Sends only relevant chunks to the LLM, reducing prompt size.           |
+| Lower cost           | Fewer input tokens generally mean lower API costs.                     |
+| Improved scalability | Makes it practical to work with very large document collections.       |
+
+
+  =======
+
+Simple Analogy
+
+Think of a 500-page textbook.
+
+If someone asks:
+
+"What is recursion?"
+
+You don't read all 500 pages.
+
+Instead, you:
+
+Open the index.
+Go to the relevant chapter.
+Read only those pages.
+
+Chunking works the same way. It divides a large document into smaller sections so the system can quickly find and use only the relevant information.
+
+In one sentence
+
+Chunking is the process of breaking a large document into smaller, searchable pieces so an AI system can retrieve the most relevant information 
+efficiently and accurately.
+
+====
+
+
+
